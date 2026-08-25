@@ -1,0 +1,43 @@
+{
+  "benchmarkId": "sales-executive-001",
+  "jobFamily": "sales_business_development",
+  "referenceJd": {
+    "jobTitle": "Sales Executive",
+    "department": "Sales and Marketing",
+    "description": "",
+    "qualifications": [
+      {"id": "Q1", "text": "Diploma or Degree in Business Administration, Marketing or a related field."}
+    ],
+    "responsibilities": [
+      {"id": "R1", "text": "Identify and approach new B2B customers in assigned market segments."},
+      {"id": "R2", "text": "Develop new sales opportunities and achieve monthly and annual sales targets."},
+      {"id": "R3", "text": "Manage existing customer accounts and maintain long-term business relationships."},
+      {"id": "R4", "text": "Understand customer requirements and prepare suitable quotations and sales proposals."},
+      {"id": "R5", "text": "Conduct product presentations, negotiate commercial terms and close sales."},
+      {"id": "R6", "text": "Maintain sales activities, opportunities and follow-up actions in the CRM system."},
+      {"id": "R7", "text": "Monitor the sales pipeline and prepare regular sales forecasts and reports."},
+      {"id": "R8", "text": "Research customer needs, competitors and new market opportunities."},
+      {"id": "R9", "text": "Coordinate with internal teams on order delivery, after-sales matters and payment collection."},
+      {"id": "R10", "text": "Carry out any other task assigned by the Sales Manager."}
+    ],
+    "requirements": [
+      {"id": "Q2", "text": "Minimum 2 years of B2B sales or business-development experience."},
+      {"id": "Q3", "text": "Proficiency in Mandarin is required to serve Mandarin-speaking customers."},
+      {"id": "Q4", "text": "Must be confident, results-driven and willing to travel."}
+    ]
+  },
+  "expectedCriteria": [
+    {"benchmarkCriterionId": "A", "acceptedNames": ["New Business Development", "Customer Acquisition", "B2B Business Development", "Sales Opportunity Development", "New Customer Development"], "type": "relevant_skill", "requiredEvidenceTopics": ["new B2B customers", "new sales opportunities", "market opportunities"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R1", "R2", "R8"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 23, "acceptableWeightRange": [19, 27]},
+    {"benchmarkCriterionId": "B", "acceptedNames": ["Sales Negotiation and Closing", "Commercial Negotiation", "Sales Closing", "Commercial Terms and Closing"], "type": "relevant_skill", "requiredEvidenceTopics": ["negotiate commercial terms", "close sales"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R5"], "optionalSourceIds": ["R4"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 19, "acceptableWeightRange": [15, 23]},
+    {"benchmarkCriterionId": "C", "acceptedNames": ["Customer Account Management", "Client Relationship Management", "Customer Relationship Management", "Existing Account Management"], "type": "relevant_skill", "requiredEvidenceTopics": ["existing customer accounts", "long-term business relationships"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R3"], "optionalSourceIds": ["R9"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 17, "acceptableWeightRange": [13, 21]},
+    {"benchmarkCriterionId": "D", "acceptedNames": ["Sales Pipeline and CRM Management", "CRM and Sales Pipeline Management", "Sales Pipeline Management", "CRM Opportunity Management"], "type": "relevant_skill", "requiredEvidenceTopics": ["CRM", "sales pipeline", "sales forecast"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R6", "R7"], "expectedImportance": "medium", "expectedPriority": "core", "targetWeight": 13, "acceptableWeightRange": [9, 17]},
+    {"benchmarkCriterionId": "E", "acceptedNames": ["Sales Proposal Development", "Quotation and Proposal Preparation", "Sales Quotation Preparation", "Commercial Proposal Development"], "type": "relevant_skill", "requiredEvidenceTopics": ["quotations", "sales proposals", "customer requirements"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R4"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 12, "acceptableWeightRange": [8, 16]},
+    {"benchmarkCriterionId": "F", "acceptedNames": ["B2B Sales Experience", "Business Development Experience", "B2B Business Development Experience"], "type": "relevant_experience", "requiredEvidenceTopics": ["2 years", "B2B sales or business development"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["Q2"], "expectedImportance": "low", "expectedPriority": "minimum_supporting", "targetWeight": 8, "acceptableWeightRange": [4, 11]},
+    {"benchmarkCriterionId": "G", "acceptedNames": ["Business and Marketing Education", "Business Administration Education", "Marketing Education", "Relevant Business Field"], "type": "education_relevance", "requiredEvidenceTopics": ["Business Administration", "Marketing"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["Q1"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 4, "acceptableWeightRange": [2, 8]},
+    {"benchmarkCriterionId": "H", "acceptedNames": ["Mandarin Language", "Mandarin Proficiency", "Mandarin", "Mandarin Communication"], "type": "job_related_language", "requiredEvidenceTopics": ["Mandarin", "Mandarin-speaking customers"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["Q3"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 4, "acceptableWeightRange": [2, 8]}
+  ],
+  "mustMerge": [["lead generation", "new-customer approach", "market-opportunity identification"], ["CRM updating", "pipeline tracking", "sales forecasting"]],
+  "mustNotMerge": [["New Business Development", "Account Management"], ["Proposal Preparation", "Sales Closing"], ["Mandarin", "generic communication"], ["Payment Collection", "finance criteria"]],
+  "mustNotGenerate": ["Confidence", "Results-Driven Attitude", "Willingness to Travel", "Communication Skills", "Product Presentation", "Payment Collection", "Other Sales Duties"],
+  "expectedEligibility": {"educationLevel": "Diploma", "minExperience": "2 years", "requiredLanguage": "Mandarin"}
+}

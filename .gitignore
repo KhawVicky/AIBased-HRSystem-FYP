@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+.env.local
+.tmp/
+.tmp-original
+*.log
+*.err
+server/mail-config.local.php
+llm_criteria_api/benchmarks/gold_standard_v1/results/*
+!llm_criteria_api/benchmarks/gold_standard_v1/results/.gitkeep

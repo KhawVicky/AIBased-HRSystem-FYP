@@ -1,0 +1,38 @@
+{
+  "reviewedAt": "2026-08-08T20:00:38.3221359+08:00",
+  "candidate": {
+    "gitCommitHash": "b509b57670d455d4d217b892bdfefa252e62f914",
+    "imageTag": "vkwk/llm-criteria-api:v1.0.11-e12",
+    "pipelineVersion": "complete-jd-workflow-relations-e12",
+    "registryDigest": "sha256:75ee7de2d332aba5831deb89a7653450ed14ec458c755156a87f7715a6639e69"
+  },
+  "verdict": "reject_material_holdout_failure",
+  "requestsAttempted": 3,
+  "httpPassCount": 3,
+  "weightPassCount": 3,
+  "metadataPassCount": 3,
+  "automatedSummary": {
+    "averageCoreCriterionRecall": 0.7857,
+    "rolesAtOrAbove80Percent": 2,
+    "minimumRoleCoreCriterionRecall": 0.5,
+    "averageSemanticCriterionPrecision": 0.9667,
+    "averageTypeAccuracy": 1.0,
+    "wrongSplits": 0,
+    "wrongMerges": 0,
+    "evidenceContaminationCases": 0,
+    "unexpectedCriteria": 0
+  },
+  "files": [
+    {"path": "llm_criteria_api/benchmarks/holdout_v1/results/e12-frozen-20260808/raw/holdout-data-analyst-001/run-1.json", "bytes": 113400, "sha256": "514f7564be2759430e1d5008390c1fe092e748dbcdadb86b70ef159835ce4172"},
+    {"path": "llm_criteria_api/benchmarks/holdout_v1/results/e12-frozen-20260808/raw/holdout-production-supervisor-001/run-1.json", "bytes": 121893, "sha256": "eab1932f66e18085e52a8f3172d226c3573c94d8ce03c69bd5bf707bc9d8e72e"},
+    {"path": "llm_criteria_api/benchmarks/holdout_v1/results/e12-frozen-20260808/raw/holdout-recruitment-executive-001/run-1.json", "bytes": 80996, "sha256": "69aadb98401637f2e34376ddd188e901a1e1996b202453c17ff888920f1aea45"},
+    {"path": "llm_criteria_api/benchmarks/holdout_v1/results/e12-frozen-20260808/run_summary.json", "bytes": 1769, "sha256": "3f9b5fce40dff1911d5289235ed59f70f108cc3140184b276e4992c995e994a1"},
+    {"path": "llm_criteria_api/benchmarks/holdout_v1/results/e12-frozen-20260808-evaluator-v2/baseline_report.json", "bytes": 123487, "sha256": "6c88f1b3d85b581f0d27b6624f01245bf95d329486d6c5beb9f5729a506fe736"},
+    {"path": "llm_criteria_api/benchmarks/holdout_v1/results/e12-frozen-20260808-evaluator-v2/baseline_report.md", "bytes": 6857, "sha256": "0435969903bddab060a82bd6b476141d7e2aa46071c09a03d66afad6ac73adcf"},
+    {"path": "llm_criteria_api/benchmarks/holdout_v1/results/e12-frozen-20260808-evaluator-v2/evaluated/holdout-data-analyst-001/run-1.json", "bytes": 35453, "sha256": "f76e56e294d90410799936bff7b8fb49040bf9bad946ab5f5da25f6855ea1c6a"},
+    {"path": "llm_criteria_api/benchmarks/holdout_v1/results/e12-frozen-20260808-evaluator-v2/evaluated/holdout-production-supervisor-001/run-1.json", "bytes": 33569, "sha256": "39858fdfbdf95d1fe15607413e0ae2b0c3b3f2a72b7d5dff00ff56ed0f68d03a"},
+    {"path": "llm_criteria_api/benchmarks/holdout_v1/results/e12-frozen-20260808-evaluator-v2/evaluated/holdout-recruitment-executive-001/run-1.json", "bytes": 34897, "sha256": "79a639714ed12619764a7a928ac250ced6e8aa9c57c4e9bd89d1c6d54e91084f"},
+    {"path": "llm_criteria_api/benchmarks/holdout_v1/results/e12-frozen-20260808-evaluator-v2/stage_attribution_report.json", "bytes": 1529061, "sha256": "66df87dd0208a531146841a6d29c203dce2fb60990c91862b3f9dd69fa9993c4"},
+    {"path": "llm_criteria_api/benchmarks/holdout_v1/results/e12-frozen-20260808-evaluator-v2/stage_attribution_report.md", "bytes": 13992, "sha256": "df8322b08ba3ad35dd2321768b1735be9b92fb182d6d5d96357ce42c8042b664"}
+  ]
+}

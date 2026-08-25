@@ -1,0 +1,176 @@
+{
+  "benchmarkId": "holdout-production-supervisor-001",
+  "jobFamily": "manufacturing_operations",
+  "referenceJd": {
+    "jobTitle": "Production Supervisor",
+    "department": "Manufacturing",
+    "description": "Lead safe and reliable shift execution while coordinating people, materials, quality and equipment to meet daily production commitments.",
+    "qualifications": [
+      {"id": "Q1", "text": "Diploma in Manufacturing, Mechanical Engineering, Industrial Engineering or a related technical field."}
+    ],
+    "responsibilities": [
+      {"id": "R1", "text": "Plan the shift production schedule and assign operators and workstations to meet daily output targets."},
+      {"id": "R2", "text": "Monitor output, cycle time and downtime and respond promptly to production delays."},
+      {"id": "R3", "text": "Enforce standard work, operating procedures, 5S and workplace safety requirements."},
+      {"id": "R4", "text": "Conduct shift briefings, coach operators and manage attendance and performance issues."},
+      {"id": "R5", "text": "Coordinate with Quality to contain defects, investigate production nonconformances and implement corrective actions."},
+      {"id": "R6", "text": "Coordinate equipment breakdown response and preventive-maintenance activities with the Maintenance team."},
+      {"id": "R7", "text": "Control raw-material and work-in-progress flow and maintain accurate production records."},
+      {"id": "R8", "text": "Complete shift handovers with clear production status, downtime and unresolved-issue information."},
+      {"id": "R9", "text": "Lead continuous-improvement activities to reduce waste and improve process efficiency."},
+      {"id": "R10", "text": "Perform other tasks assigned by the Production Manager."}
+    ],
+    "requirements": [
+      {"id": "Q2", "text": "Minimum 3 years of manufacturing production experience, including at least 1 year in a supervisory role."},
+      {"id": "Q3", "text": "Knowledge of lean manufacturing, OEE and structured problem-solving methods is preferred."},
+      {"id": "Q4", "text": "Willingness to work rotating shifts is required."}
+    ]
+  },
+  "expectedCriteria": [
+    {
+      "benchmarkCriterionId": "A",
+      "acceptedNames": ["Shift Production Planning and Work Allocation", "Production Scheduling and Operator Assignment", "Shift Planning and Resource Allocation", "Daily Production Planning"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["shift production schedule", "assign operators", "daily output targets"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R1"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 13,
+      "acceptableWeightRange": [8, 19]
+    },
+    {
+      "benchmarkCriterionId": "B",
+      "acceptedNames": ["Production Performance and Downtime Monitoring", "Output and Downtime Control", "Production Delay Response", "Manufacturing Performance Monitoring"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["output", "cycle time", "downtime", "production delays"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R2"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 12,
+      "acceptableWeightRange": [7, 18]
+    },
+    {
+      "benchmarkCriterionId": "C",
+      "acceptedNames": ["Standard Work, 5S and Safety Compliance", "Production SOP and Safety Compliance", "Manufacturing Standards and Workplace Safety", "5S and Operating Procedure Compliance"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["standard work", "operating procedures", "5S", "workplace safety"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R3"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 12,
+      "acceptableWeightRange": [7, 18]
+    },
+    {
+      "benchmarkCriterionId": "D",
+      "acceptedNames": ["Operator Supervision and Performance Management", "Shift Team Supervision", "Operator Coaching and Attendance Management", "Production Workforce Supervision"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["shift briefings", "coach operators", "attendance", "performance issues"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R4"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 12,
+      "acceptableWeightRange": [7, 18]
+    },
+    {
+      "benchmarkCriterionId": "E",
+      "acceptedNames": ["Defect Containment and Corrective Action", "Production Quality and Nonconformance Management", "Quality Defect Investigation", "Manufacturing Corrective Actions"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["contain defects", "production nonconformances", "corrective actions"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R5"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 11,
+      "acceptableWeightRange": [6, 17]
+    },
+    {
+      "benchmarkCriterionId": "F",
+      "acceptedNames": ["Equipment Breakdown and Maintenance Coordination", "Production Maintenance Coordination", "Breakdown Response and Preventive Maintenance", "Equipment Maintenance Support"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["equipment breakdown", "preventive-maintenance", "Maintenance team"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R6"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 9,
+      "acceptableWeightRange": [5, 15]
+    },
+    {
+      "benchmarkCriterionId": "G",
+      "acceptedNames": ["Material and WIP Flow Control", "Production Material Flow and Records", "Raw Material and Work-in-Progress Control", "Manufacturing Inventory Flow"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["raw-material", "work-in-progress flow", "production records"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R7"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 9,
+      "acceptableWeightRange": [5, 15]
+    },
+    {
+      "benchmarkCriterionId": "H",
+      "acceptedNames": ["Lean Continuous Improvement", "Manufacturing Process Improvement", "Waste Reduction and Process Efficiency", "Continuous Improvement Leadership"],
+      "allowedTypes": ["relevant_skill", "domain_knowledge"],
+      "requiredEvidenceTopics": ["continuous-improvement", "reduce waste", "process efficiency"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R9"],
+      "optionalSourceIds": ["Q3"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 7,
+      "acceptableWeightRange": [3, 13]
+    },
+    {
+      "benchmarkCriterionId": "I",
+      "acceptedNames": ["Production Supervisory Experience", "Manufacturing Production Experience", "Manufacturing Supervision Experience", "Production Leadership Experience"],
+      "type": "relevant_experience",
+      "requiredEvidenceTopics": ["3 years", "manufacturing production experience", "supervisory role"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["Q2"],
+      "expectedImportance": "low",
+      "expectedPriority": "minimum_supporting",
+      "targetWeight": 5,
+      "acceptableWeightRange": [2, 10]
+    },
+    {
+      "benchmarkCriterionId": "J",
+      "acceptedNames": ["Manufacturing or Engineering Education", "Technical Manufacturing Education", "Mechanical or Industrial Engineering Education", "Relevant Technical Diploma"],
+      "type": "education_relevance",
+      "requiredEvidenceTopics": ["Manufacturing or Mechanical Engineering", "Industrial Engineering or technical field"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["Q1"],
+      "expectedImportance": "medium",
+      "expectedPriority": "supporting",
+      "targetWeight": 4,
+      "acceptableWeightRange": [1, 9]
+    },
+    {
+      "benchmarkCriterionId": "K",
+      "acceptedNames": ["Production Shift Handover", "Shift Status and Issue Handover", "Manufacturing Shift Communication", "Shift Handover Reporting"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["shift handovers", "production status", "downtime", "unresolved-issue information"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R8"],
+      "expectedImportance": "medium",
+      "expectedPriority": "supporting",
+      "targetWeight": 6,
+      "acceptableWeightRange": [2, 11]
+    }
+  ],
+  "mustMerge": [
+    ["production scheduling", "operator assignment"],
+    ["output monitoring", "downtime monitoring", "production-delay response"],
+    ["defect containment", "nonconformance investigation", "corrective actions"]
+  ],
+  "mustNotMerge": [
+    ["quality defect management", "equipment maintenance"],
+    ["operator supervision", "safety compliance"],
+    ["manufacturing education", "production supervisory experience"]
+  ],
+  "mustNotGenerate": ["Teamwork", "Communication Skills", "Other Duties", "Relevant Experience", "Shift Availability", "Willingness to Work Shifts", "Technical Skills"],
+  "expectedEligibility": {"educationLevel": "Diploma", "minExperience": "3 years"}
+}

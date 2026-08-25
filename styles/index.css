@@ -1,0 +1,54 @@
+/* Loads all website styles. */
+@import './tailwind.css';
+@import './theme.css';
+
+.uwc-scrollbar {
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+}
+
+.uwc-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.uwc-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 9999px;
+}
+
+.uwc-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 9999px;
+}
+
+.uwc-scrollbar:hover,
+.uwc-scrollbar:active,
+.uwc-scrollbar:focus-within {
+  scrollbar-color: #94a3b8 #f8fafc;
+}
+
+.uwc-scrollbar:hover::-webkit-scrollbar-track,
+.uwc-scrollbar:active::-webkit-scrollbar-track,
+.uwc-scrollbar:focus-within::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.uwc-scrollbar:hover::-webkit-scrollbar-thumb,
+.uwc-scrollbar:active::-webkit-scrollbar-thumb,
+.uwc-scrollbar:focus-within::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-color: #f8fafc;
+}
+
+.uwc-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.uwc-scrollbar-hidden {
+  scrollbar-width: none;
+}
+
+.uwc-scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,42 @@
+{
+  "benchmarkId": "hr-manager-001",
+  "jobFamily": "human_resources",
+  "referenceJd": {
+    "jobTitle": "HR Manager",
+    "department": "Human Resource",
+    "description": "",
+    "qualifications": [
+      {"id": "Q1", "text": "Minimum STPM, Diploma or Degree."}
+    ],
+    "responsibilities": [
+      {"id": "R1", "text": "Manage and supervise end-to-end HR operations, including recruitment, onboarding, training, performance management and payroll coordination."},
+      {"id": "R2", "text": "Manage employee relations, counselling, disciplinary cases and grievance handling in accordance with company procedures."},
+      {"id": "R3", "text": "Manage the recruitment and administration of foreign workers and expatriates."},
+      {"id": "R4", "text": "Coordinate foreign-worker quotas, work permits, immigration documentation, hostel arrangements, transportation, renewals and departure processes."},
+      {"id": "R5", "text": "Ensure HR practices comply with Malaysian labour laws and employment regulations."},
+      {"id": "R6", "text": "Develop and review HR policies, departmental SOPs and records required for ISO audits."},
+      {"id": "R7", "text": "Prepare workforce reports and advise management on HR matters."},
+      {"id": "R8", "text": "Coordinate security guards and ensure employee access-control arrangements are maintained."},
+      {"id": "R9", "text": "Perform any other duties assigned by management."}
+    ],
+    "requirements": [
+      {"id": "Q2", "text": "Minimum 5 years of experience in the HR field, including supervisory responsibilities."},
+      {"id": "Q3", "text": "Experience working in a manufacturing environment is preferred."},
+      {"id": "Q4", "text": "Good communication, leadership and interpersonal skills."}
+    ]
+  },
+  "expectedCriteria": [
+    {"benchmarkCriterionId": "A", "acceptedNames": ["HR Operations Management", "HR Process Management", "Human Resource Operations", "HR Function Management"], "type": "relevant_skill", "requiredEvidenceTopics": ["recruitment", "onboarding", "training", "performance management", "payroll"], "forbiddenEvidenceTopics": ["foreign-worker permits", "security guards", "access control", "ad hoc duties"], "expectedSourceIds": ["R1"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 24, "acceptableWeightRange": [20, 28]},
+    {"benchmarkCriterionId": "B", "acceptedNames": ["Foreign Worker Management", "Foreign Worker and Expatriate Administration", "Foreign Workforce Management", "Foreign Worker Administration"], "type": "relevant_skill", "requiredEvidenceTopics": ["foreign worker", "expatriate", "recruitment or administration", "work permit or immigration"], "forbiddenEvidenceTopics": ["security guards", "access control", "ISO audit", "generic management", "ad hoc duties"], "expectedSourceIds": ["R3", "R4"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 20, "acceptableWeightRange": [16, 24]},
+    {"benchmarkCriterionId": "C", "acceptedNames": ["Employee Relations and Discipline", "Employee Relations Management", "Employee Relations", "Disciplinary and Grievance Management"], "type": "relevant_skill", "requiredEvidenceTopics": ["employee relations", "counselling or disciplinary", "grievance"], "forbiddenEvidenceTopics": ["foreign workers", "payroll", "security guards"], "expectedSourceIds": ["R2"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 14, "acceptableWeightRange": [10, 18]},
+    {"benchmarkCriterionId": "D", "acceptedNames": ["Malaysian Labour Law", "Malaysian Employment Law", "Malaysian Labour Laws and Regulations", "Labour Law Compliance"], "type": "domain_knowledge", "requiredEvidenceTopics": ["Malaysian labour laws", "employment regulations"], "forbiddenEvidenceTopics": ["ISO audit", "canteen", "access control"], "expectedSourceIds": ["R5"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 13, "acceptableWeightRange": [9, 17]},
+    {"benchmarkCriterionId": "E", "acceptedNames": ["HR Policy and ISO Compliance", "HR Policies and SOP Management", "HR Policy and Procedure Management", "HR SOP and ISO Compliance"], "allowedTypes": ["relevant_skill", "domain_knowledge"], "type": "relevant_skill", "requiredEvidenceTopics": ["HR policies", "departmental SOP", "ISO audit"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R6"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 11, "acceptableWeightRange": [7, 15]},
+    {"benchmarkCriterionId": "F", "acceptedNames": ["Manufacturing HR Experience", "Manufacturing Environment Experience", "Manufacturing Human Resource Experience"], "type": "relevant_experience", "requiredEvidenceTopics": ["manufacturing environment"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["Q3"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 8, "acceptableWeightRange": [4, 12]},
+    {"benchmarkCriterionId": "G", "acceptedNames": ["HR Field Experience", "Human Resource Experience", "HR Management Experience", "Supervisory HR Experience"], "type": "relevant_experience", "requiredEvidenceTopics": ["5 years", "HR field", "supervisory responsibilities"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["Q2"], "expectedImportance": "low", "expectedPriority": "minimum_supporting", "targetWeight": 5, "acceptableWeightRange": [2, 8]},
+    {"benchmarkCriterionId": "H", "acceptedNames": ["Security and Access Administration", "Security Guard and Access Control", "Security Operations Administration", "Workplace Security Administration"], "type": "relevant_skill", "requiredEvidenceTopics": ["security guards", "access control"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R8"], "expectedImportance": "low", "expectedPriority": "supporting", "targetWeight": 5, "acceptableWeightRange": [2, 8]}
+  ],
+  "mustMerge": [["R3", "R4"]],
+  "mustNotMerge": [["Foreign Worker Management", "Security and Access Administration"], ["Malaysian Labour Law", "ISO audit"], ["Employee Relations", "generic management"], ["Payroll", "security operations"]],
+  "mustNotGenerate": ["Relevant Education Field", "Management", "General Management", "Communication Skills", "Leadership Skills", "Interpersonal Skills", "Ad Hoc Duties", "Workforce Reporting"],
+  "expectedEligibility": {"educationLevel": "STPM / Foundation / Matriculation / Diploma rank", "minExperience": "5+ years"}
+}

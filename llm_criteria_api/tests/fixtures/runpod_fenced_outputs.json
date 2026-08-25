@@ -1,0 +1,17 @@
+{
+  "caseId": "runpod_fenced_process_engineer",
+  "input": {
+    "jobTitle": "Process Engineer",
+    "department": "Engineering",
+    "responsibilities": [
+      "Analyse process data to identify yield and cycle-time losses."
+    ],
+    "requirements": [
+      "Knowledge of statistical process control is required."
+    ]
+  },
+  "rawModelOutputs": [
+    "```json\n{\n  \"criteria\": [\n    {\n      \"type\": \"relevant_skill\",\n      \"name\": \"Process Data\",\n      \"sourceText\": \"Analyse process data to identify yield and cycle-time losses.\"\n    }\n  ]\n}\n```",
+    "```JSON\n{\n  \"criteria\": [\n    {\n      \"type\": \"domain_knowledge\",\n      \"name\": \"Statistical Process Control Knowledge\",\n      \"sourceText\": \"Knowledge of statistical process control is required.\"\n    }\n  ]\n}\n```"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "benchmarkId": "software-engineer-001",
+  "jobFamily": "software_engineering",
+  "referenceJd": {
+    "jobTitle": "Software Engineer",
+    "department": "Information Technology",
+    "description": "",
+    "qualifications": [
+      {"id": "Q1", "text": "Bachelor's Degree in Computer Science, Software Engineering or a related field."}
+    ],
+    "responsibilities": [
+      {"id": "R1", "text": "Develop responsive web application interfaces using React and TypeScript."},
+      {"id": "R2", "text": "Design, develop and maintain REST APIs using Python and FastAPI."},
+      {"id": "R3", "text": "Design relational database structures and write efficient SQL queries."},
+      {"id": "R4", "text": "Integrate frontend applications with backend APIs and external services."},
+      {"id": "R5", "text": "Write unit and integration tests and participate in code reviews."},
+      {"id": "R6", "text": "Troubleshoot software defects, improve application performance and maintain existing production systems."},
+      {"id": "R7", "text": "Use Git and CI/CD pipelines to manage code changes and application deployments."},
+      {"id": "R8", "text": "Work with team members to deliver assigned projects."}
+    ],
+    "requirements": [
+      {"id": "Q2", "text": "Minimum 2 years of software development experience."},
+      {"id": "Q3", "text": "Experience delivering production web applications is preferred."},
+      {"id": "Q4", "text": "Strong problem-solving and communication skills."}
+    ]
+  },
+  "expectedCriteria": [
+    {"benchmarkCriterionId": "A", "acceptedNames": ["Backend API Development", "Python REST API Development", "FastAPI Backend Development", "REST API Development"], "type": "relevant_skill", "requiredEvidenceTopics": ["REST API", "Python", "FastAPI"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R2"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 24, "acceptableWeightRange": [20, 28]},
+    {"benchmarkCriterionId": "B", "acceptedNames": ["React and TypeScript Development", "Frontend Web Development", "React Frontend Development", "Web Interface Development"], "type": "relevant_skill", "requiredEvidenceTopics": ["React", "TypeScript", "responsive web application"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R1"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 22, "acceptableWeightRange": [18, 26]},
+    {"benchmarkCriterionId": "C", "acceptedNames": ["Database Design and SQL", "Relational Database Development", "SQL and Database Design", "Relational Database Design"], "type": "relevant_skill", "requiredEvidenceTopics": ["relational database", "SQL queries"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R3"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 15, "acceptableWeightRange": [11, 19]},
+    {"benchmarkCriterionId": "D", "acceptedNames": ["Software Testing and Debugging", "Software Quality and Troubleshooting", "Testing and Defect Resolution", "Application Testing and Debugging"], "type": "relevant_skill", "requiredEvidenceTopics": ["unit testing or integration testing", "troubleshoot defects"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R5", "R6"], "expectedImportance": "medium", "expectedPriority": "core", "targetWeight": 13, "acceptableWeightRange": [9, 17]},
+    {"benchmarkCriterionId": "E", "acceptedNames": ["Production Web Application Experience", "Production Software Development Experience", "Web Application Delivery Experience", "Software Development Experience"], "type": "relevant_experience", "requiredEvidenceTopics": ["production web applications", "software development experience"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["Q2", "Q3"], "optionalSourceIds": ["R4", "R6"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 12, "acceptableWeightRange": [8, 16]},
+    {"benchmarkCriterionId": "F", "acceptedNames": ["Git and CI/CD", "Version Control and CI/CD", "Git and Deployment Pipelines", "CI/CD Pipeline Usage"], "type": "relevant_skill", "requiredEvidenceTopics": ["Git", "CI/CD", "deployment"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R7"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 8, "acceptableWeightRange": [4, 12]},
+    {"benchmarkCriterionId": "G", "acceptedNames": ["Computing Education", "Computer Science Education", "Software Engineering Education", "Relevant Computing Field"], "type": "education_relevance", "requiredEvidenceTopics": ["Computer Science", "Software Engineering"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["Q1"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 6, "acceptableWeightRange": [3, 10]}
+  ],
+  "mustMerge": [["unit testing", "integration testing", "software-defect troubleshooting"]],
+  "mustNotMerge": [["React development", "backend API development"], ["database design", "Git and CI/CD"], ["computing education", "software-development experience"]],
+  "mustNotGenerate": ["Teamwork", "Project Delivery", "Communication Skills", "Problem-Solving Skills", "Code Review Experience", "Relevant Experience", "Technical Skills", "Programming"],
+  "expectedEligibility": {"educationLevel": "Bachelor Degree", "minExperience": "2 years"}
+}

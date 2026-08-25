@@ -1,0 +1,30 @@
+{
+  "lockedAt": "2026-08-08T19:46:01.1992795+08:00",
+  "purpose": "Lock the unseen holdout JDs and human reference criteria before their single production evaluation.",
+  "candidateFreeze": {
+    "frozenAt": "2026-08-08T19:35:30.0583280+08:00",
+    "gitCommitHash": "b509b57670d455d4d217b892bdfefa252e62f914",
+    "gitTree": "fb15aea52134f755abb7b3fd6036a87465b9c471",
+    "imageTag": "vkwk/llm-criteria-api:v1.0.11-e12",
+    "pipelineVersion": "complete-jd-workflow-relations-e12",
+    "registryDigest": "sha256:75ee7de2d332aba5831deb89a7653450ed14ec458c755156a87f7715a6639e69"
+  },
+  "productionRequestsSentBeforeLock": 0,
+  "fixtures": [
+    {
+      "path": "llm_criteria_api/benchmarks/holdout_v1/fixtures/data_analyst_001.json",
+      "bytes": 8264,
+      "sha256": "54131f105c779d662ed58a838d919eed4dcc1093672e0c185dfafbb213f61b45"
+    },
+    {
+      "path": "llm_criteria_api/benchmarks/holdout_v1/fixtures/production_supervisor_001.json",
+      "bytes": 9269,
+      "sha256": "b481ae17a29c58cabc646be02372af1307a04ec6a8af02bc34ed7b2b4a9b15e7"
+    },
+    {
+      "path": "llm_criteria_api/benchmarks/holdout_v1/fixtures/recruitment_executive_001.json",
+      "bytes": 8492,
+      "sha256": "246d0033b0f8210f643cbe0d5cf1537f9f465890574664433e161a56e28ca66a"
+    }
+  ]
+}

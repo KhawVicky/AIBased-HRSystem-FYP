@@ -1,0 +1,43 @@
+{
+  "benchmarkId": "qa-engineer-001",
+  "jobFamily": "quality_assurance_manufacturing",
+  "referenceJd": {
+    "jobTitle": "QA Engineer",
+    "department": "Quality Assurance",
+    "description": "",
+    "qualifications": [
+      {"id": "Q1", "text": "Bachelor's Degree in Engineering, Materials Science or a related technical field."}
+    ],
+    "responsibilities": [
+      {"id": "R1", "text": "Maintain and improve the manufacturing quality management system."},
+      {"id": "R2", "text": "Investigate product and process nonconformances and implement corrective and preventive actions."},
+      {"id": "R3", "text": "Perform root-cause analysis using 8D, fishbone diagrams and the 5 Why method."},
+      {"id": "R4", "text": "Monitor manufacturing quality using Statistical Process Control and quality data analysis."},
+      {"id": "R5", "text": "Handle customer complaints and prepare corrective-action reports."},
+      {"id": "R6", "text": "Support internal, customer and certification audits."},
+      {"id": "R7", "text": "Ensure quality processes comply with ISO 9001 requirements and customer quality standards."},
+      {"id": "R8", "text": "Manage inspection and measurement-equipment calibration records."},
+      {"id": "R9", "text": "Work with production and engineering teams to improve product quality."},
+      {"id": "R10", "text": "Perform other duties assigned by the Quality Manager."}
+    ],
+    "requirements": [
+      {"id": "Q2", "text": "Minimum 2 years of quality-assurance experience in a manufacturing environment."},
+      {"id": "Q3", "text": "Knowledge of Microsoft Excel is required."},
+      {"id": "Q4", "text": "Must be analytical, independent and able to work under pressure."}
+    ]
+  },
+  "expectedCriteria": [
+    {"benchmarkCriterionId": "A", "acceptedNames": ["CAPA and Root-Cause Analysis", "Corrective and Preventive Action", "Quality Problem-Solving", "Root-Cause Analysis and CAPA"], "type": "relevant_skill", "requiredEvidenceTopics": ["corrective and preventive actions", "8D or fishbone or 5 Why", "root-cause analysis"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R2", "R3"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 22, "acceptableWeightRange": [18, 26]},
+    {"benchmarkCriterionId": "B", "acceptedNames": ["Quality Management Systems", "QMS Management", "Manufacturing Quality Management System", "Quality System Management"], "type": "relevant_skill", "requiredEvidenceTopics": ["quality management system", "maintain or improve"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R1"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 16, "acceptableWeightRange": [12, 20]},
+    {"benchmarkCriterionId": "C", "acceptedNames": ["Statistical Process Control", "SPC and Quality Data Analysis", "Manufacturing Quality Monitoring", "Statistical Quality Control"], "type": "relevant_skill", "requiredEvidenceTopics": ["Statistical Process Control", "quality data analysis"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R4"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 16, "acceptableWeightRange": [12, 20]},
+    {"benchmarkCriterionId": "D", "acceptedNames": ["Nonconformance and Complaint Handling", "Nonconformance Management", "Customer Quality Complaint Handling", "Quality Issue Management"], "type": "relevant_skill", "requiredEvidenceTopics": ["nonconformance", "customer complaints or corrective-action reports"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R2", "R5"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 14, "acceptableWeightRange": [10, 18]},
+    {"benchmarkCriterionId": "E", "acceptedNames": ["ISO 9001 Quality Standards", "ISO 9001 Compliance", "Quality Standards Knowledge", "ISO Quality Requirements"], "type": "domain_knowledge", "requiredEvidenceTopics": ["ISO 9001", "customer quality standards"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R7"], "optionalSourceIds": ["R6"], "expectedImportance": "medium", "expectedPriority": "core", "targetWeight": 12, "acceptableWeightRange": [8, 16]},
+    {"benchmarkCriterionId": "F", "acceptedNames": ["Measurement and Calibration Control", "Calibration Management", "Inspection Equipment Calibration", "Measurement Equipment Control"], "type": "relevant_skill", "requiredEvidenceTopics": ["measurement equipment", "calibration records"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R8"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 8, "acceptableWeightRange": [4, 12]},
+    {"benchmarkCriterionId": "G", "acceptedNames": ["Manufacturing Quality Experience", "Manufacturing QA Experience", "Quality Assurance Experience", "Manufacturing Environment QA Experience"], "type": "relevant_experience", "requiredEvidenceTopics": ["2 years", "quality assurance", "manufacturing environment"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["Q2"], "expectedImportance": "low", "expectedPriority": "minimum_supporting", "targetWeight": 7, "acceptableWeightRange": [3, 11]},
+    {"benchmarkCriterionId": "H", "acceptedNames": ["Engineering Education", "Engineering and Materials Science Education", "Relevant Technical Education", "Technical Field Education"], "type": "education_relevance", "requiredEvidenceTopics": ["Engineering", "Materials Science"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["Q1"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 5, "acceptableWeightRange": [2, 9]}
+  ],
+  "mustMerge": [["CAPA", "8D", "fishbone", "5 Why"]],
+  "mustNotMerge": [["Statistical Process Control", "Calibration"], ["ISO 9001 knowledge", "practical QMS management"], ["Engineering Education", "Manufacturing Quality Experience"]],
+  "mustNotGenerate": ["Microsoft Excel", "Analytical Skills", "Independent Working", "Working Under Pressure", "Cross-Functional Teamwork", "Quality Improvement", "Other Duties"],
+  "expectedEligibility": {"educationLevel": "Bachelor Degree", "minExperience": "2 years"}
+}

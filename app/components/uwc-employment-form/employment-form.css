@@ -1,0 +1,589 @@
+/* Styles the employment form. */
+.employment-form-page {
+  --form-blue: #08ace0;
+  --form-blue-dark: #003b7a;
+  --form-ink: #111;
+  min-height: 100vh;
+  padding: 24px 12px 48px;
+  background: #fff;
+  color: var(--form-ink);
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.28;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+.employment-form__scale-shell {
+  position: relative;
+  margin: 0 auto;
+}
+
+.employment-form {
+  box-sizing: border-box;
+  width: 1280px;
+  max-width: none;
+  margin: 0;
+  padding: 38px 44px 28px;
+  background: #fff;
+  border: 0;
+  transform-origin: top left;
+}
+
+.employment-form * { box-sizing: border-box; }
+.employment-form section { margin-top: 26px; }
+.employment-form em { font-weight: 500; }
+.employment-form__candidate-fields { margin: 0; padding: 0; border: 0; }
+.employment-form__masthead-candidate-fields { display: contents; }
+.employment-form__candidate-fields:disabled { opacity: 1; }
+.employment-form__candidate-fields:disabled input,
+.employment-form__candidate-fields:disabled textarea,
+.employment-form__candidate-fields:disabled select,
+.employment-form__candidate-fields:disabled button {
+  opacity: 1;
+  color: #111;
+  cursor: default;
+}
+.employment-form__candidate-fields[data-locked] input[type="radio"],
+.employment-form__candidate-fields[data-locked] input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  opacity: 1;
+  border: 1.5px solid #111;
+  background: #fff;
+}
+.employment-form__candidate-fields[data-locked] input[type="radio"] {
+  border-radius: 50%;
+}
+.employment-form__candidate-fields[data-locked] input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: #111;
+}
+.employment-form__candidate-fields[data-locked] input[type="checkbox"]:checked {
+  background: #111;
+}
+.employment-form__candidate-fields[data-locked] input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.employment-form input,
+.employment-form textarea,
+.employment-form select,
+.employment-form button {
+  border-radius: 0;
+  box-shadow: none;
+  font: inherit;
+}
+
+.employment-form input,
+.employment-form textarea,
+.employment-form select {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.employment-form input:not([type="radio"]):not([type="checkbox"]):not([type="file"]),
+.employment-form textarea,
+.employment-form select {
+  width: 100%;
+  min-height: 34px;
+  padding: 6px 8px;
+  border: 0;
+  border-top: 1px solid #777;
+  background: #f1f3fc;
+  color: #111;
+  outline: 0;
+}
+
+.employment-form input:focus,
+.employment-form textarea:focus,
+.employment-form select:focus {
+  background: #eef9fd;
+  outline: 2px solid var(--form-blue-dark);
+  outline-offset: -2px;
+}
+
+.employment-form[data-show-validation] input:invalid,
+.employment-form[data-show-validation] textarea:invalid,
+.employment-form[data-show-validation] select:invalid {
+  outline: 2px solid #c62828;
+  outline-offset: -2px;
+}
+
+.employment-form[data-show-validation] .employment-form__field:has(input:invalid),
+.employment-form[data-show-validation] .employment-form__field:has(textarea:invalid),
+.employment-form[data-show-validation] .employment-form__field:has(select:invalid),
+.employment-form[data-show-validation] .employment-form__field:has([data-invalid]) {
+  outline: 2px solid #c62828;
+  outline-offset: -2px;
+}
+
+.employment-form__message {
+  margin: 0 0 14px;
+  padding: 9px 12px;
+  border: 1px solid;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.employment-form__message p {
+  margin: 0;
+}
+
+.employment-form__message ul {
+  margin: 7px 0 0;
+  padding-left: 20px;
+}
+
+.employment-form__message li + li {
+  margin-top: 3px;
+}
+
+.employment-form__message--error {
+  border-color: #c62828;
+  background: #fff0f0;
+  color: #9f1d1d;
+}
+
+.employment-form__message--success {
+  border-color: #2e7d32;
+  background: #f0fff2;
+  color: #1f6b24;
+}
+
+.employment-form[data-show-validation] [data-invalid] {
+  outline: 2px solid #c62828;
+  outline-offset: -2px;
+}
+
+.employment-form[data-show-validation] .employment-form__signature-field[data-invalid] .employment-form__signature-trigger {
+  outline: 2px solid #c62828;
+  outline-offset: -2px;
+}
+
+.employment-form input[type="radio"],
+.employment-form input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin: 0 6px 0 0;
+  border-radius: 0;
+  accent-color: var(--form-blue-dark);
+  vertical-align: -2px;
+}
+
+.employment-form__masthead {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr) 150px;
+  gap: 28px;
+  align-items: start;
+}
+
+.employment-form__admin-box,
+.employment-form__photo {
+  border: 1px solid #111;
+}
+
+.employment-form__admin-box {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.employment-form__admin-box .employment-form__field {
+  grid-template-columns: 88px minmax(0, 1fr);
+  min-height: 38px;
+}
+
+.employment-form__admin-box .employment-form__field + .employment-form__field {
+  border-top: 1px solid #111;
+}
+
+.employment-form__admin-box input {
+  min-width: 0;
+  max-width: 100%;
+  border-top: 0 !important;
+  border-left: 1px solid #111 !important;
+}
+
+.employment-form__identity {
+  display: flex;
+  min-width: 0;
+  justify-content: center;
+  gap: 22px;
+  align-items: center;
+}
+
+.employment-form__identity img { width: 112px; height: auto; object-fit: contain; }
+.employment-form__identity address { font-style: normal; font-size: 17px; line-height: 1.35; }
+.employment-form__identity address strong { color: var(--form-blue-dark); font-family: Georgia, serif; font-size: 23px; }
+.employment-form__identity address small { font: 10px Arial, sans-serif; }
+
+.employment-form__photo {
+  position: relative;
+  display: flex;
+  min-height: 158px;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.employment-form__photo > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.employment-form__photo input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.employment-form__photo small { position: absolute; inset: auto 4px 3px; overflow: hidden; color: transparent; font-size: 9px; text-overflow: ellipsis; white-space: nowrap; }
+.employment-form__photo:focus-within { outline: 2px solid var(--form-blue-dark); }
+
+.employment-form__title { margin: 14px 0 10px; text-align: center; }
+.employment-form__title h1 { margin: 0; font-size: 19px; font-weight: 800; line-height: 1.2; }
+.employment-form__title > strong { font-size: 16px; }
+.employment-form__confidentiality { font-size: 13px; }
+.employment-form__confidentiality p { margin: 8px 0; }
+
+.employment-form__position-grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-top: 14px !important;
+  border: 1px solid #111;
+}
+
+.employment-form__position-grid > .employment-form__field { grid-template-rows: auto minmax(70px, auto); align-content: start; border-right: 1px solid #111; }
+.employment-form__position-grid > .employment-form__field input,
+.employment-form__position-grid > .employment-form__field select { min-height: 70px; }
+.employment-form__position-grid fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.employment-form__position-grid legend,
+.employment-form__position-grid > .employment-form__field > span {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  min-height: 44px;
+  padding: 6px 8px;
+  background: var(--form-blue);
+  border-bottom: 1px solid #111;
+  font-weight: 800;
+}
+
+.employment-form__check-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.employment-form__check-grid label { display: flex; flex-direction: column; align-items: center; justify-content: space-between; min-height: 70px; padding: 5px; border-right: 1px solid #777; border-bottom: 1px solid #777; font-size: 12px; font-weight: 400; text-align: center; }
+.employment-form__check-grid input[type="checkbox"] { order: 2; margin: 4px 0 0 !important; }
+.employment-form__source-other > span { min-height: 0; }
+.employment-form__source-other > div { display: flex; align-items: center; width: 100%; gap: 5px; margin-top: 4px; }
+.employment-form__source-other input[type="checkbox"] { order: initial; flex: 0 0 auto; }
+.employment-form__source-other input:not([type]) { order: initial; min-width: 0; height: 25px; padding: 2px 4px; background: #f1f3fc; border: 0 !important; border-bottom: 1px solid #111 !important; }
+
+.employment-form__section-title { margin: 0 0 7px; font-size: 16px; font-weight: 800; line-height: 1.3; }
+.employment-form__hint { margin: -3px 0 7px; }
+.employment-form__others-section { margin-top: 18px !important; }
+.employment-form__others-section .employment-form__subheading { margin-top: 5px; padding: 5px 8px; }
+.employment-form__subheading { margin: 8px 0 0; padding: 7px 8px; border: 1px solid #111; font-size: 15px; font-weight: 500; }
+
+.employment-form__grid { display: grid; overflow: hidden; border: 1px solid #111; }
+.employment-form__grid--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.employment-form__grid--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.employment-form__grid > * { border-right: 1px solid #111; border-bottom: 1px solid #111; }
+.employment-form__personal-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+.employment-form__personal-grid .employment-form__field--full { grid-column: 1 / -1; }
+.employment-form__personal-grid .employment-form__field--wide { grid-column: span 7; }
+.employment-form__personal-grid .employment-form__field--narrow { grid-column: span 5; }
+.employment-form__personal-grid .employment-form__field--mobile { grid-column: span 4; }
+.employment-form__personal-grid .employment-form__field--residential { grid-column: span 8; }
+.employment-form__personal-grid .employment-form__field:not(.employment-form__field--textarea) {
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: center;
+  min-height: 56px;
+}
+.employment-form__personal-grid .employment-form__field:not(.employment-form__field--textarea) > span {
+  min-height: 0;
+  padding: 8px 4px 8px 8px;
+  white-space: nowrap;
+}
+.employment-form__personal-grid .employment-form__field:not(.employment-form__field--textarea) input,
+.employment-form__personal-grid .employment-form__field:not(.employment-form__field--textarea) select {
+  min-height: 54px;
+  border: 0 !important;
+  background: #f1f3fc;
+}
+
+.employment-form__field { display: grid; min-width: 0; margin: 0; overflow: hidden; font-size: 14px; font-weight: 600; }
+.employment-form__field > span { min-height: 31px; padding: 8px; }
+.employment-form__field > span em { font-weight: 600; }
+.employment-form__field--textarea textarea { min-height: 82px; resize: vertical; }
+
+.employment-form__option-block { border: 1px solid #111; border-top: 0; padding: 7px 8px; }
+.employment-form__option-block > div { display: grid; grid-template-columns: repeat(3, minmax(140px, 1fr)); gap: 6px 16px; margin-top: 6px; }
+.employment-form__option-block label { font-size: 14px; font-weight: 400; }
+.employment-form__option-block .employment-form__field { grid-column: span 2; grid-template-columns: 180px 1fr; align-items: center; }
+.employment-form__option-block .employment-form__field input { border: 0 !important; border-bottom: 1px solid #111 !important; }
+.employment-form__radio-options { grid-template-columns: repeat(2, 1fr) !important; }
+.employment-form__race-block > div { grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); grid-template-rows: repeat(3, auto); }
+.employment-form__race-block > div > :nth-child(1) { grid-column: 1; grid-row: 1; }
+.employment-form__race-block > div > :nth-child(2) { grid-column: 1; grid-row: 2; }
+.employment-form__race-block > div > :nth-child(3) { grid-column: 1; grid-row: 3; }
+.employment-form__race-block > div > :nth-child(4) { grid-column: 2; grid-row: 1; }
+.employment-form__race-block > div > .employment-form__field { grid-column: 2; grid-row: 2 / span 2; }
+
+.employment-form__repeatable { border: 1px solid #111; }
+.employment-form__table-scroll { overflow-x: auto; }
+.employment-form__table { width: 100%; min-width: 800px; border-collapse: collapse; table-layout: fixed; }
+.employment-form__table th { height: 42px; padding: 6px; background: var(--form-blue); border-right: 1px solid #111; border-bottom: 1px solid #111; font-size: 14px; text-align: center; }
+.employment-form__table th em { display: block; }
+.employment-form__table td { height: 47px; min-width: 0; padding: 0; overflow: hidden; border-right: 1px solid #111; border-bottom: 1px solid #111; }
+.employment-form__table td input,
+.employment-form__table td select {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  height: 46px;
+  border: 0 !important;
+}
+.employment-form__action-column { width: 66px !important; }
+.employment-form__row-action { padding: 5px !important; text-align: center; }
+.employment-form__row-action button,
+.employment-form__add-row {
+  padding: 5px 8px;
+  border: 1px solid #111;
+  background: #fff;
+  color: #111;
+  cursor: pointer;
+  font-size: 12px;
+}
+.employment-form__row-action button:hover,
+.employment-form__add-row:hover { background: #e4f7fd; }
+.employment-form__row-action button:disabled { color: #888; cursor: not-allowed; }
+.employment-form__add-row { margin: 7px; font-weight: 700; }
+
+.employment-form__family-note { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-bottom: 7px; }
+.employment-form__wide-textarea { min-height: 86px !important; border: 1px solid #111 !important; resize: vertical; }
+.employment-form__spaced-grid { margin-top: 22px; }
+
+.employment-form__disclosures { border: 1px solid #111; border-top: 0; }
+.employment-form__disclosure { display: grid; grid-template-columns: minmax(280px, 38%) minmax(180px, 20%) minmax(0, 42%); min-width: 0; margin: 0; padding: 0; border: 0; border-bottom: 1px solid #111; }
+.employment-form__disclosure legend { float: left; width: 100%; min-height: 76px; padding: 9px; font-size: 14px; }
+.employment-form__disclosure legend em { display: block; }
+.employment-form__yes-no { display: flex; flex-direction: column; justify-content: center; gap: 3px; padding: 8px 12px; border-left: 1px solid #111; }
+.employment-form__yes-no label { font-size: 14px; font-weight: 400; }
+.employment-form__detail-fields { display: grid; gap: 4px; align-content: start; padding: 4px; border-left: 1px solid #111; }
+.employment-form__detail-fields > p { margin: 0; padding: 1px 0 2px; font-size: 14px; line-height: 1.2; }
+.employment-form__detail-fields .employment-form__field { grid-template-columns: minmax(150px, 38%) 1fr; align-items: center; }
+.employment-form__detail-fields .employment-form__field > span { min-height: 0; padding: 4px; }
+.employment-form__detail-fields input { min-height: 27px !important; border: 0 !important; background: #f1f3fc; }
+
+.employment-form__declaration { padding: 0 0 12px; border: 1px solid #111; }
+.employment-form__declaration h2 { margin: 0; padding: 9px; border-bottom: 1px solid #111; font-size: 16px; text-align: center; }
+.employment-form__declaration p { margin: 12px; }
+.employment-form__declaration-check { display: block; margin: 12px; font-size: 14px; }
+.employment-form__declaration .employment-form__grid { margin: 0 12px; }
+.employment-form__declaration .employment-form__field,
+.employment-form__declaration .employment-form__signature-field { grid-template-rows: 38px 60px; }
+.employment-form__declaration .employment-form__field > span,
+.employment-form__declaration .employment-form__signature-field > span { display: flex; align-items: center; height: 38px; min-height: 38px; padding: 8px; font-weight: 700; }
+.employment-form__declaration .employment-form__field > span em { font-weight: 700; }
+.employment-form__declaration .employment-form__field input { height: 60px; min-height: 60px; }
+.employment-form__declaration .employment-form__signature-trigger { height: 60px; min-height: 60px; }
+.employment-form__signature-field { display: grid; min-width: 0; }
+.employment-form__signature-field > span { min-height: 31px; padding: 8px; font-weight: 700; }
+.employment-form__signature-field > span em { font-weight: 700; }
+.employment-form__signature-trigger {
+  display: flex;
+  min-height: 56px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: 0;
+  border-top: 1px solid #777;
+  background: #f1f3fc;
+  color: #003b7a;
+  cursor: pointer;
+  font-weight: 600;
+  text-align: left;
+}
+.employment-form__signature-trigger:hover { background: #e4f7fd; }
+.employment-form__signature-trigger img { max-width: 100%; max-height: 52px; object-fit: contain; }
+.employment-form__signature-dialog { max-width: min(840px, calc(100% - 2rem)) !important; }
+.employment-form-page--success {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  background: #f1f5f9;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.employment-form__submitted-card {
+  width: min(806px, 100%);
+  padding: 50px 30px 30px;
+  border: 1px solid #dbe4ef;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgb(15 23 42 / 0.12);
+  text-align: center;
+}
+.employment-form__submitted-icon {
+  display: inline-flex;
+  width: 74px;
+  height: 74px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #00a85a;
+}
+.employment-form__submitted-card h1 {
+  margin: 0 0 18px;
+  color: #001a45;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.employment-form__submitted-card p {
+  max-width: 690px;
+  margin: 0 auto 34px;
+  color: #334155;
+  font-size: 19px;
+  line-height: 1.45;
+}
+.employment-form__submitted-button {
+  min-width: 88px;
+  background: #003b7a !important;
+  color: #fff !important;
+  box-shadow: 0 2px 5px rgb(0 59 122 / 0.24);
+}
+.employment-form__submitted-button:hover {
+  background: #002f63 !important;
+}
+.employment-form__signature-canvas {
+  width: 100%;
+  height: 240px;
+  touch-action: none;
+  border: 1px dashed #7f8fa8;
+  background: #f8fafc;
+  cursor: crosshair;
+}
+
+.employment-form__internal { border: 1px solid #111; }
+.employment-form__internal-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 30px 0 12px;
+  color: var(--form-blue-dark);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.employment-form__internal-divider::before,
+.employment-form__internal-divider::after {
+  content: "";
+  height: 2px;
+  flex: 1;
+  background: var(--form-blue);
+}
+.employment-form__blue-header { margin: 0; padding: 8px; background: var(--form-blue); border-bottom: 1px solid #111; font-size: 16px; font-weight: 800; }
+.employment-form__interview-status { display: grid; grid-template-columns: 180px 250px 238px 127px minmax(0, 1fr); grid-template-rows: repeat(2, 27px); column-gap: 0; row-gap: 0; margin: 0; padding: 18px 4px 8px; border: 0; border-bottom: 1px solid #111; }
+.employment-form__interview-status legend { grid-column: 1; grid-row: 1 / span 2; padding: 3px 0; font-weight: 700; }
+.employment-form__interview-status label { display: flex; align-items: center; font-size: 14px; font-weight: 400; white-space: nowrap; }
+.employment-form__status-hire { grid-column: 2; grid-row: 1; }
+.employment-form__status-second { grid-column: 2; grid-row: 2; }
+.employment-form__status-kiv { grid-column: 3; grid-row: 1; }
+.employment-form__status-reject { grid-column: 4; grid-row: 1; }
+.employment-form__status-other { grid-column: 3 / span 2; grid-row: 2; }
+.employment-form__suitable-department-input { grid-column: 5; grid-row: 2; min-width: 0; height: 27px; padding: 2px 4px; border: 0 !important; border-bottom: 1px solid #111 !important; }
+.employment-form__comments textarea { min-height: 120px; resize: vertical; }
+.employment-form__internal > .employment-form__grid { border: 0; }
+.employment-form__internal > .employment-form__grid > .employment-form__field {
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: center;
+  min-height: 46px;
+}
+.employment-form__internal > .employment-form__grid > .employment-form__field > span {
+  min-height: 0;
+  padding: 6px 4px 6px 8px;
+  white-space: nowrap;
+}
+.employment-form__internal > .employment-form__grid > .employment-form__field input,
+.employment-form__internal > .employment-form__grid > .employment-form__field select {
+  min-height: 44px;
+  border: 0 !important;
+}
+.employment-form__internal .employment-form__field > .employment-form__yes-no { flex-direction: row; border: 0; }
+.employment-form__internal > .employment-form__grid > .employment-form__field > .employment-form__yes-no { justify-content: flex-start; align-items: center; gap: 12px; padding: 0; }
+.employment-form__internal > .employment-form__grid > .employment-form__field > .employment-form__yes-no label { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.employment-form__internal > .employment-form__grid > .employment-form__field > .employment-form__yes-no input { width: 15px; min-height: 15px; margin: 0; }
+
+.employment-form__approval { margin: 0; padding: 6px 8px; border: 0; border-top: 1px solid #111; }
+.employment-form__approval legend { float: left; width: 100%; margin-bottom: 8px; font-weight: 700; }
+.employment-form__approval-fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; clear: both; }
+.employment-form__approval-fields .employment-form__field { grid-template-columns: auto 1fr; align-items: center; }
+.employment-form__approval-fields input { border: 0 !important; border-bottom: 1px solid #111 !important; }
+.employment-form__approval-fields .employment-form__signature-field { grid-template-columns: auto minmax(0, 1fr); align-items: center; }
+.employment-form__approval-fields .employment-form__signature-field > span { min-height: 0; padding: 0 6px 0 0; white-space: nowrap; }
+.employment-form__approval-fields .employment-form__signature-trigger { min-height: 36px; padding: 3px 6px; border: 0; border-bottom: 1px solid #111; }
+.employment-form__approval-fields .employment-form__signature-trigger img { max-height: 30px; }
+.employment-form__candidate-submit { display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin-top: 16px; padding: 0; }
+.employment-form__candidate-submit button { padding: 8px 14px; background: var(--form-blue-dark); color: #fff; font-weight: 700; }
+.employment-form__candidate-submit button:disabled { cursor: wait; opacity: 0.7; }
+.employment-form__candidate-submit p { margin: 0; font-size: 13px; }
+.employment-form__internal-save { display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin-top: 16px; }
+.employment-form__internal-save button { padding: 8px 14px; background: var(--form-blue-dark); color: #fff; font-weight: 700; }
+.employment-form__internal-save button:disabled { cursor: wait; opacity: 0.7; }
+.employment-form__internal-save p { margin: 0; font-size: 13px; font-weight: 700; color: #1f6b24; }
+
+.employment-form__footer { display: flex; justify-content: space-between; margin-top: 16px; font-family: Georgia, serif; font-size: 12px; }
+.employment-form__footer span:last-child { color: #555; font-family: Arial, sans-serif; font-size: 10px; }
+
+@media (max-width: 1304px) {
+  .employment-form-page { padding: 12px; overflow-x: hidden; }
+}
+
+@page { size: A4 portrait; margin: 6mm; }
+
+@media print {
+  html,
+  body,
+  #root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .employment-form-page { padding: 0; background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .employment-form__scale-shell {
+    width: auto !important;
+    height: auto !important;
+    margin: 0;
+  }
+  .employment-form {
+    width: 1280px;
+    max-width: none;
+    padding: 0;
+    border: 0;
+    transform: none !important;
+    zoom: 0.56;
+  }
+  .employment-form__action-column,
+  .employment-form__row-action,
+  .employment-form__add-row,
+  .employment-form__candidate-submit,
+  .employment-form__photo small,
+  .employment-form__footer span:last-child { display: none; }
+  .employment-form__table-scroll { overflow: visible; }
+  .employment-form__table { min-width: 0; }
+  .employment-form__table tr { break-inside: avoid; page-break-inside: avoid; }
+  .employment-form__print-page-start { break-before: page; page-break-before: always; }
+}

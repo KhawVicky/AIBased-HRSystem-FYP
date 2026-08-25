@@ -1,0 +1,165 @@
+{
+  "benchmarkId": "holdout-data-analyst-001",
+  "jobFamily": "data_analytics",
+  "referenceJd": {
+    "jobTitle": "Data Analyst",
+    "department": "Business Intelligence",
+    "description": "Turn reliable operational data into clear analysis, dashboards and recommendations for business decision-making.",
+    "qualifications": [
+      {"id": "Q1", "text": "Bachelor's Degree in Statistics, Mathematics, Data Science, Computer Science or a related quantitative field."}
+    ],
+    "responsibilities": [
+      {"id": "R1", "text": "Gather and validate data from operational systems, databases and approved external sources."},
+      {"id": "R2", "text": "Clean and transform datasets, resolve data-quality issues and document repeatable validation rules."},
+      {"id": "R3", "text": "Write SQL queries and build reusable analytical datasets for reporting and investigation."},
+      {"id": "R4", "text": "Develop Power BI dashboards and KPI reports with clear definitions and drill-down views."},
+      {"id": "R5", "text": "Perform statistical analysis to identify trends, anomalies and actionable business insights."},
+      {"id": "R6", "text": "Translate stakeholder questions into analytical requirements and present evidence-based recommendations."},
+      {"id": "R7", "text": "Automate recurring data preparation and reporting tasks using Python."},
+      {"id": "R8", "text": "Maintain data dictionaries and follow approved data-access and confidentiality controls."},
+      {"id": "R9", "text": "Collaborate with team members on other assigned activities."}
+    ],
+    "requirements": [
+      {"id": "Q2", "text": "Minimum 2 years of data analysis or business reporting experience."},
+      {"id": "Q3", "text": "Advanced SQL skills are required."},
+      {"id": "Q4", "text": "Hands-on experience with Power BI or Tableau is required."},
+      {"id": "Q5", "text": "Experience using Python for data analysis or automation is preferred."}
+    ]
+  },
+  "expectedCriteria": [
+    {
+      "benchmarkCriterionId": "A",
+      "acceptedNames": ["Data Collection and Validation", "Data Gathering and Validation", "Source Data Validation", "Operational Data Extraction and Validation"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["gather data", "validate data", "operational systems or databases"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R1"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 12,
+      "acceptableWeightRange": [7, 18]
+    },
+    {
+      "benchmarkCriterionId": "B",
+      "acceptedNames": ["Data Cleaning and Transformation", "Dataset Preparation and Data Quality", "Data Quality Management", "Data Cleansing and Transformation"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["clean datasets", "transform datasets", "data-quality issues", "validation rules"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R2"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 12,
+      "acceptableWeightRange": [7, 18]
+    },
+    {
+      "benchmarkCriterionId": "C",
+      "acceptedNames": ["SQL Querying and Dataset Development", "Advanced SQL", "SQL Data Analysis", "Analytical Dataset Development"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["SQL queries", "analytical datasets"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R3"],
+      "optionalSourceIds": ["Q3"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 14,
+      "acceptableWeightRange": [8, 20]
+    },
+    {
+      "benchmarkCriterionId": "D",
+      "acceptedNames": ["Power BI Dashboard and KPI Reporting", "Business Intelligence Dashboard Development", "Dashboard and KPI Reporting", "Power BI Reporting"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["Power BI dashboards", "KPI reports", "drill-down views"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R4"],
+      "optionalSourceIds": ["Q4"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 14,
+      "acceptableWeightRange": [8, 20]
+    },
+    {
+      "benchmarkCriterionId": "E",
+      "acceptedNames": ["Statistical Trend and Anomaly Analysis", "Statistical Analysis and Business Insights", "Trend and Anomaly Analysis", "Business Insight Analysis"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["statistical analysis", "trends", "anomalies", "business insights"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R5"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 14,
+      "acceptableWeightRange": [8, 20]
+    },
+    {
+      "benchmarkCriterionId": "F",
+      "acceptedNames": ["Analytical Requirements and Recommendations", "Business Requirements Analysis", "Stakeholder Analytics and Insight Communication", "Evidence-Based Business Recommendations"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["stakeholder questions", "analytical requirements", "evidence-based recommendations"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R6"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 10,
+      "acceptableWeightRange": [5, 16]
+    },
+    {
+      "benchmarkCriterionId": "G",
+      "acceptedNames": ["Python Reporting Automation", "Python Data Automation", "Data Preparation and Reporting Automation", "Python for Data Analysis and Automation"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["automate", "data preparation", "reporting tasks", "Python"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R7"],
+      "optionalSourceIds": ["Q5"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 10,
+      "acceptableWeightRange": [5, 16]
+    },
+    {
+      "benchmarkCriterionId": "H",
+      "acceptedNames": ["Data Governance and Access Control", "Data Dictionary and Confidentiality Controls", "Data Documentation and Governance", "Data Access Compliance"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["data dictionaries", "data-access", "confidentiality controls"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R8"],
+      "expectedImportance": "medium",
+      "expectedPriority": "supporting",
+      "targetWeight": 6,
+      "acceptableWeightRange": [2, 11]
+    },
+    {
+      "benchmarkCriterionId": "I",
+      "acceptedNames": ["Data Analysis Experience", "Business Reporting Experience", "Data Analysis or Reporting Experience"],
+      "type": "relevant_experience",
+      "requiredEvidenceTopics": ["2 years", "data analysis or business reporting experience"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["Q2"],
+      "expectedImportance": "low",
+      "expectedPriority": "minimum_supporting",
+      "targetWeight": 4,
+      "acceptableWeightRange": [1, 9]
+    },
+    {
+      "benchmarkCriterionId": "J",
+      "acceptedNames": ["Quantitative or Computing Education", "Statistics and Data Science Education", "Relevant Quantitative Education", "Data Analytics Education"],
+      "type": "education_relevance",
+      "requiredEvidenceTopics": ["Statistics or Mathematics", "Data Science or Computer Science"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["Q1"],
+      "expectedImportance": "medium",
+      "expectedPriority": "supporting",
+      "targetWeight": 4,
+      "acceptableWeightRange": [1, 9]
+    }
+  ],
+  "mustMerge": [
+    ["stakeholder questions", "analytical requirements", "business recommendations"],
+    ["dataset cleaning", "data-quality resolution", "validation-rule documentation"]
+  ],
+  "mustNotMerge": [
+    ["dashboard development", "statistical analysis"],
+    ["SQL dataset development", "Python reporting automation"],
+    ["quantitative education", "data-analysis experience"]
+  ],
+  "mustNotGenerate": ["Communication Skills", "Teamwork", "Attention to Detail", "Other Duties", "Technical Skills", "Relevant Experience"],
+  "expectedEligibility": {"educationLevel": "Bachelor Degree", "minExperience": "2 years"}
+}

@@ -1,0 +1,615 @@
+{
+  "exportTimestamp": "2026-07-30T16:00:42.389052+00:00",
+  "source": "active_kaggle_runtime_In_cells",
+  "sourceCellIndices": [
+    3,
+    4,
+    6,
+    7,
+    8
+  ],
+  "moduleSha256": "e65ce84a73d386c9fd0ca99d51a048aaa21d6c0e396e2bbef3ad17da629104f4",
+  "functions": {
+    "add_contextual_relevant_experience_fallback": {
+      "sourceHash": "ddfd38d646dc6408aaecf201b5c2aefd0c81b6cbe238ce4880106ce47d55a18c",
+      "referencedGlobals": [
+        "EXPERIENCE_EVIDENCE_PATTERN",
+        "EXPERIENCE_FALLBACK_CONTEXT_PATTERN",
+        "EXPERIENCE_LEADING_THRESHOLD_PATTERN",
+        "fallback_display_name",
+        "find_grounded_source",
+        "normalise_text",
+        "re"
+      ],
+      "exportFailure": null
+    },
+    "add_domain_knowledge_fallback": {
+      "sourceHash": "52c85ed7cfccfd3bf347acc83c55decc6165afaf02665d9f7c5cf994a4550607",
+      "referencedGlobals": [
+        "DOMAIN_KNOWLEDGE_FALLBACK_INTRO_PATTERN",
+        "DOMAIN_KNOWLEDGE_FALLBACK_SUBJECT_PATTERN",
+        "fallback_display_name",
+        "find_grounded_source",
+        "normalise_text"
+      ],
+      "exportFailure": null
+    },
+    "add_education_fallback": {
+      "sourceHash": "4b226cf3c7439eb116bf1eeef3a64c70ed5a90efc098655bf9228b67d8caa1fa",
+      "referencedGlobals": [
+        "has_explicit_education_field",
+        "normalise_text"
+      ],
+      "exportFailure": null
+    },
+    "add_preferred_certification_fallback": {
+      "sourceHash": "2ad4bf92d19e49a060ee85183e1ac372209f7ee0c8db78dff4be198224bc7e6c",
+      "referencedGlobals": [
+        "MANDATORY_CERTIFICATION_PATTERN",
+        "PREFERRED_CERTIFICATION_FALLBACK_CONTEXT_PATTERN",
+        "PREFERRED_CERTIFICATION_PATTERN",
+        "fallback_display_name",
+        "find_grounded_source",
+        "normalise_text",
+        "re"
+      ],
+      "exportFailure": null
+    },
+    "apply_consolidation": {
+      "sourceHash": "a2e84b04fbed69c2ef217d0ad5903c6f8e0085f4db4e4a437fe528b6d1a0ad54",
+      "referencedGlobals": [
+        "apply_python_fallback_consolidation",
+        "normalise_text",
+        "validate_consolidation_output",
+        "validate_final_criteria_count"
+      ],
+      "exportFailure": null
+    },
+    "apply_python_fallback_consolidation": {
+      "sourceHash": "e88147ce6131e1f65e6fb08b3d56fde48e113a6d5020dcb22c78d8b041d6e219",
+      "referencedGlobals": [
+        "merge_metadata_values"
+      ],
+      "exportFailure": null
+    },
+    "assign_default_weights": {
+      "sourceHash": "a6655c84483004fac25ce2c2a15101c34c5da0d9003126b75f613031ed600da5",
+      "referencedGlobals": [
+        "ALLOWED_SOFT_CRITERIA_TYPES",
+        "DEFAULT_TYPE_WEIGHTS"
+      ],
+      "exportFailure": null
+    },
+    "assign_stable_criterion_ids": {
+      "sourceHash": "ea405210d2150b3e3a0e67f76ec2e511e92b1eb0674d267483e04085b1131add",
+      "referencedGlobals": [],
+      "exportFailure": null
+    },
+    "build_consolidation_messages": {
+      "sourceHash": "30cc1fb35f6a2d5ec850c8a15d2386dce4dfc00f78240eadd15b5fab66054658",
+      "referencedGlobals": [
+        "CONSOLIDATION_OUTPUT_SHAPE",
+        "CONSOLIDATION_SYSTEM_PROMPT",
+        "build_consolidation_payload",
+        "json"
+      ],
+      "exportFailure": null
+    },
+    "build_consolidation_payload": {
+      "sourceHash": "9a1ac763048cff203c1be72039ff9f05e22b61301b5e5d37877084199dbdef15",
+      "referencedGlobals": [
+        "ALLOWED_SOFT_CRITERIA_TYPES"
+      ],
+      "exportFailure": null
+    },
+    "build_section_messages": {
+      "sourceHash": "39dbff4e620aa87ebf855d64e991af7a8ce3dbdf92506f4d19225be7b0839c90",
+      "referencedGlobals": [
+        "SECTION_GUIDANCE",
+        "SECTION_OUTPUT_SHAPE",
+        "SOFT_CRITERIA_FRAMEWORK",
+        "SYSTEM_PROMPT",
+        "json"
+      ],
+      "exportFailure": null
+    },
+    "can_merge_criteria_group": {
+      "sourceHash": "9c3df7eeb3d27b30d7166c4436c1e6a666025f2d3049a25684066ef611335028",
+      "referencedGlobals": [],
+      "exportFailure": null
+    },
+    "capability_tokens": {
+      "sourceHash": "962df74bf51e66305e1758da498b27918a20efb0a712d971350f7016488d1f5f",
+      "referencedGlobals": [
+        "CAPABILITY_STOPWORDS",
+        "comparable_text"
+      ],
+      "exportFailure": null
+    },
+    "comparable_text": {
+      "sourceHash": "7361ebc36213c88e07d4b28b06933584298831113ee0ef47c3dddc6e6b0d7450",
+      "referencedGlobals": [
+        "re"
+      ],
+      "exportFailure": null
+    },
+    "criterion_name_unsupported_tokens": {
+      "sourceHash": "4fb796bf9ec066eb4b434f12ba62d88779772bb20b492a9139275216c082d127",
+      "referencedGlobals": [
+        "capability_tokens"
+      ],
+      "exportFailure": null
+    },
+    "extract_json_object": {
+      "sourceHash": "1e8452a9f748f492cc4be8fbdc975902e5ddaa8fe706966c97f97c1fe0e7c0c7",
+      "referencedGlobals": [
+        "json",
+        "normalise_text"
+      ],
+      "exportFailure": null
+    },
+    "extract_soft_criteria_llm": {
+      "sourceHash": "9746c055bce5bd02bc51b7eef6ce6bedb883fd78d331b16440e8514c0e68ef1d",
+      "referencedGlobals": [],
+      "exportFailure": null
+    },
+    "fallback_criteria_match": {
+      "sourceHash": "404d626e2c12d785797cced1fefbe46c15ffe04b948c347d37af878462126589",
+      "referencedGlobals": [
+        "DUPLICATE_SIMILARITY_THRESHOLD",
+        "is_operational_workflow_step",
+        "is_supporting_workflow_capability",
+        "normalise_text",
+        "text_similarity",
+        "token_overlap_score",
+        "workflow_activity_families",
+        "workflow_objective_families"
+      ],
+      "exportFailure": null
+    },
+    "fallback_display_name": {
+      "sourceHash": "a4f32b9f3ddb59e95a89a08905cbc645d8f134e50d14e44d5d4ce838ff739023",
+      "referencedGlobals": [
+        "normalise_text",
+        "re"
+      ],
+      "exportFailure": null
+    },
+    "filter_generic_duties": {
+      "sourceHash": "fc27b35168ac9f6d5e7aa2ba327b0be48848b6075c8736372b59716711f2c0da",
+      "referencedGlobals": [
+        "GENERIC_DUTY_REASON",
+        "is_generic_duty",
+        "normalise_text"
+      ],
+      "exportFailure": null
+    },
+    "finalise_extraction": {
+      "sourceHash": "599b369ae9ad036550ba578ad4ac8bc42efe1c3ccd094d59d65f432ac6d12406",
+      "referencedGlobals": [
+        "DEFAULT_DESCRIPTION_TEMPLATES",
+        "DEFAULT_EVIDENCE_RULES",
+        "add_contextual_relevant_experience_fallback",
+        "add_domain_knowledge_fallback",
+        "add_education_fallback",
+        "add_preferred_certification_fallback",
+        "apply_consolidation",
+        "assign_default_weights",
+        "assign_stable_criterion_ids",
+        "merge_duplicate_criteria",
+        "needs_job_consolidation",
+        "normalise_text",
+        "validate_final_criteria_count"
+      ],
+      "exportFailure": null
+    },
+    "find_grounded_source": {
+      "sourceHash": "5b551deba4a8c9c0c8159ad20e839bc61110551d3d848c905dda353f35897f32",
+      "referencedGlobals": [
+        "SOURCE_GROUNDING_THRESHOLD",
+        "normalise_text",
+        "source_grounding_score"
+      ],
+      "exportFailure": null
+    },
+    "generate_consolidation_raw_output": {
+      "sourceHash": "3343b03b5e78b8a20a32169567bd79f5345b9cb71d70874c94835d46bcbf5084",
+      "referencedGlobals": [
+        "build_consolidation_messages",
+        "generate_model_output"
+      ],
+      "exportFailure": null
+    },
+    "generate_json_retry_output": {
+      "sourceHash": "9e49fdb0a419c54c8c4557025afc224be7389112d9ed888e9ec2d80c31403f0e",
+      "referencedGlobals": [
+        "ALLOWED_SOFT_CRITERIA_TYPES",
+        "SYSTEM_PROMPT",
+        "generate_model_output",
+        "json"
+      ],
+      "exportFailure": null
+    },
+    "generate_model_output": {
+      "sourceHash": "167117d1f67c7ba2815aefcbed7dd315507721b27c3d9142cafc70485a16b403",
+      "referencedGlobals": [
+        "MAX_NEW_TOKENS"
+      ],
+      "exportFailure": null
+    },
+    "generate_section_raw_output": {
+      "sourceHash": "097c9dcdbc4d0dda35b49ad6f1e213d0cef0823376634f86c6c3b811f1cb4120",
+      "referencedGlobals": [
+        "build_section_messages",
+        "generate_model_output"
+      ],
+      "exportFailure": null
+    },
+    "grounding_tokens": {
+      "sourceHash": "985d9fe5f0db560cea5672503db8f4020170993271b63699dfb5d2c4ecc821c8",
+      "referencedGlobals": [
+        "SOURCE_GROUNDING_STOPWORDS",
+        "comparable_text"
+      ],
+      "exportFailure": null
+    },
+    "has_analysis_documentation_boundary": {
+      "sourceHash": "7b2e7719b5f07175bd254dcd12f90363ee9e51d9f5b1c0f95eb0760d68887370",
+      "referencedGlobals": [
+        "ANALYSIS_PROBLEM_SOLVING_PATTERN",
+        "REPORTING_DOCUMENTATION_PATTERN"
+      ],
+      "exportFailure": null
+    },
+    "has_explicit_education_field": {
+      "sourceHash": "13a1374009762e8e450b48bb165045d58c3f77af6ffc6bcc48df31a8c417d377",
+      "referencedGlobals": [
+        "EDUCATION_CREDENTIAL_PATTERN",
+        "EDUCATION_FIELD_LINK_PATTERN",
+        "GENERIC_EDUCATION_FIELD_PATTERN",
+        "normalise_text",
+        "re"
+      ],
+      "exportFailure": null
+    },
+    "has_people_tool_boundary": {
+      "sourceHash": "ebf389a9d268e440c1138209f36e65096af3511d237bcf597da2ff5b7e4f3fc0",
+      "referencedGlobals": [
+        "PEOPLE_MANAGEMENT_PATTERN",
+        "TOOL_OR_SOFTWARE_PATTERN"
+      ],
+      "exportFailure": null
+    },
+    "is_generic_duty": {
+      "sourceHash": "26f76a054ec1afd5082b478839cc04dd2b3116e62be28c42feac36ee70598209",
+      "referencedGlobals": [
+        "GENERIC_DUTY_PATTERNS",
+        "normalise_text"
+      ],
+      "exportFailure": null
+    },
+    "is_operational_workflow_step": {
+      "sourceHash": "28039afbb8b838175a075220c7845ae39a6afea3e101286f35d146e6b9cbb007",
+      "referencedGlobals": [
+        "WORKFLOW_STEP_ACTION_PATTERN"
+      ],
+      "exportFailure": null
+    },
+    "is_supporting_workflow_capability": {
+      "sourceHash": "9c1b7520bff17dfe07f1754d7040659ad3db6a7a122ab94c46a76da79b9cb5bd",
+      "referencedGlobals": [
+        "WORKFLOW_SUPPORTING_CAPABILITY_PATTERN"
+      ],
+      "exportFailure": null
+    },
+    "merge_duplicate_criteria": {
+      "sourceHash": "b81d3e352b771e1eda122e4cc971fa13b92cddb2cb1ae32ac623b91248684425",
+      "referencedGlobals": [
+        "merge_metadata_values"
+      ],
+      "exportFailure": null
+    },
+    "merge_metadata_values": {
+      "sourceHash": "e3e20b3c0422e704dd5faf7a134fffa28134e6dbed5bb58f5e808265cd6b1a31",
+      "referencedGlobals": [],
+      "exportFailure": null
+    },
+    "needs_job_consolidation": {
+      "sourceHash": "8f5a5df30f8307f2f102f8af14312a41b1489a5a538d000fe1ad93eeb22aeedf",
+      "referencedGlobals": [],
+      "exportFailure": null
+    },
+    "normalise_education_criterion_name": {
+      "sourceHash": "492e56cd14997252338c6832c007a52d1bdf4bbf1586c1844165f906089112ba",
+      "referencedGlobals": [
+        "criterion_name_unsupported_tokens",
+        "re"
+      ],
+      "exportFailure": null
+    },
+    "normalise_identifier": {
+      "sourceHash": "3fc9fe85e9eed1687ea3ddcb73e409a42697be8150d6713e0b98670f3d2adfef",
+      "referencedGlobals": [
+        "re"
+      ],
+      "exportFailure": null
+    },
+    "normalise_text": {
+      "sourceHash": "678f9f24bb3ade50f5e33c8035b773fb219a52796562ca77779ca661f1c2b49b",
+      "referencedGlobals": [
+        "re"
+      ],
+      "exportFailure": null
+    },
+    "same_independently_scorable_capability": {
+      "sourceHash": "27b4f0091b10aeb12f4f3cf59b8cb1053e5589c2244dc514fb1cd0d7ea711b7d",
+      "referencedGlobals": [
+        "STRICT_NAME_SIMILARITY_THRESHOLD",
+        "has_analysis_documentation_boundary",
+        "has_people_tool_boundary",
+        "is_operational_workflow_step",
+        "is_supporting_workflow_capability",
+        "normalise_text",
+        "text_similarity",
+        "token_overlap_score",
+        "workflow_objective_families"
+      ],
+      "exportFailure": null
+    },
+    "section_output_retry_reason": {
+      "sourceHash": "72f954456237a77f6f4be1fab35ca117ea060e3f96e96c24ff3b675278c2d366",
+      "referencedGlobals": [
+        "extract_json_object"
+      ],
+      "exportFailure": null
+    },
+    "source_grounding_score": {
+      "sourceHash": "e699e9683a72b517bd0c69527a90d302d12513f0f1dd0405189520a9e53a98b0",
+      "referencedGlobals": [
+        "SequenceMatcher",
+        "comparable_text",
+        "grounding_tokens"
+      ],
+      "exportFailure": null
+    },
+    "text_similarity": {
+      "sourceHash": "6a09f83a290bb8867e8bd4ebcbc269ae32e44909c35feb15748bb0333a4343d2",
+      "referencedGlobals": [
+        "SequenceMatcher",
+        "comparable_text"
+      ],
+      "exportFailure": null
+    },
+    "token_overlap_score": {
+      "sourceHash": "b951e81323286b201956afdc5d565cf8185468070e981a17064ecc1680a82a33",
+      "referencedGlobals": [
+        "capability_tokens"
+      ],
+      "exportFailure": null
+    },
+    "validate_consolidation_output": {
+      "sourceHash": "206db3c9728ceb364a61bc75e9e3efea9f871f20ee375dfcd2a5dff207523141",
+      "referencedGlobals": [
+        "ALLOWED_SOFT_CRITERIA_TYPES",
+        "can_merge_criteria_group",
+        "criterion_name_unsupported_tokens",
+        "extract_json_object",
+        "merge_metadata_values",
+        "normalise_identifier",
+        "normalise_text"
+      ],
+      "exportFailure": null
+    },
+    "validate_final_criteria_count": {
+      "sourceHash": "f9bb0a6db9ea524967483a904980b03c290590360fe1bb3392ec884b06bf61e8",
+      "referencedGlobals": [
+        "ALLOWED_SOFT_CRITERIA_TYPES"
+      ],
+      "exportFailure": null
+    },
+    "validate_section_output": {
+      "sourceHash": "93b6e15d93561712c33cf06b5a5ebf6de0edbadb81ac03ee46471c76a7d09a0d",
+      "referencedGlobals": [
+        "ALLOWED_SOFT_CRITERIA_TYPES",
+        "EDUCATION_SOURCE_PATTERN",
+        "EXPERIENCE_EVIDENCE_PATTERN",
+        "EXPLICIT_LANGUAGE_PATTERN",
+        "FORMAL_DOMAIN_KNOWLEDGE_PATTERN",
+        "MANDATORY_CERTIFICATION_PATTERN",
+        "PREFERRED_CERTIFICATION_PATTERN",
+        "PREFERRED_MAX_SECTION_CRITERIA",
+        "criterion_name_unsupported_tokens",
+        "extract_json_object",
+        "find_grounded_source",
+        "has_explicit_education_field",
+        "normalise_education_criterion_name",
+        "normalise_identifier",
+        "normalise_text",
+        "re"
+      ],
+      "exportFailure": null
+    },
+    "weights_are_valid": {
+      "sourceHash": "3222bd780747b504ad04aeab41d649ebffc0ffb1bc8c603127af70a2474b6d77",
+      "referencedGlobals": [],
+      "exportFailure": null
+    },
+    "workflow_activity_families": {
+      "sourceHash": "72b00408d70178f750a83cb5cdb2a47f48b2ee49029b50e877661361c24a1fe2",
+      "referencedGlobals": [
+        "WORKFLOW_ACTIVITY_PATTERNS"
+      ],
+      "exportFailure": null
+    },
+    "workflow_objective_families": {
+      "sourceHash": "60d09e8443eddd2928bab7e76b7404ed89807d966a85166757b9a7a3a6de1e1d",
+      "referencedGlobals": [
+        "WORKFLOW_OBJECTIVE_PATTERNS"
+      ],
+      "exportFailure": null
+    }
+  },
+  "constantsAndThresholds": {
+    "MODEL_NAME": "Qwen/Qwen2.5-3B-Instruct",
+    "MAX_NEW_TOKENS": 900,
+    "USE_4BIT": true,
+    "DEVICE_LABEL": "Tesla T4",
+    "SOFT_CRITERIA_FRAMEWORK": {
+      "relevant_skill": {
+        "label": "Relevant Skill",
+        "description": "Specific technical skills, tools, systems, work activities, and practical abilities required by the JD."
+      },
+      "relevant_experience": {
+        "label": "Relevant Experience",
+        "description": "Strength, depth, responsibility match, industry relevance, and working-environment relevance beyond a minimum threshold."
+      },
+      "education_relevance": {
+        "label": "Education Relevance",
+        "description": "Relevance of the candidate's education field to the work, without automatically preferring a higher qualification level."
+      },
+      "domain_knowledge": {
+        "label": "Domain Knowledge",
+        "description": "Professional processes, regulations, standards, business knowledge, or technical principles explicitly required by the JD."
+      },
+      "preferred_certification": {
+        "label": "Preferred Certification",
+        "description": "A certification or licence explicitly described as preferred, desirable, advantageous, or an added advantage."
+      },
+      "job_related_language": {
+        "label": "Job-Related Language",
+        "description": "A language explicitly required or preferred for the work. Never infer a language from the job title or department."
+      }
+    },
+    "ALLOWED_SOFT_CRITERIA_TYPES": "{'domain_knowledge', 'relevant_experience', 'education_relevance', 'preferred_certification', 'job_related_language', 'relevant_skill'}",
+    "SYSTEM_PROMPT": "You extract resume-scoring soft criteria from one JD section.\n\nAllowed type IDs:\n- relevant_skill\n- relevant_experience\n- education_relevance\n- domain_knowledge\n- preferred_certification\n- job_related_language\n\nRules:\n1. Use only explicit evidence from the supplied section text. Never infer from job title or department.\n2. Extract every clearly supported, meaningful criterion. Aim for 1 to 4 concise criteria for this section, but do not omit a distinct core capability or an explicit language, education, experience, knowledge, or preferred-certification criterion only to meet that range.\n3. Merge duties only when they evaluate the same overall capability. Do not create one criterion per sentence or minor task. Do not copy criterion names from examples or instructions. Create every criterion name only from the supplied JD section. Each name must accurately describe its own sourceText and must not introduce another job function, technology, industry, or process that the sourceText does not explicitly support.\n4. Never create another type ID and do not force all types to appear.\n5. Practical work activities, tools, systems, and abilities are relevant_skill.\n6. Education qualifications, degrees, diplomas, fields of study, and related disciplines are education_relevance, not relevant_skill.\n7. Laws, regulations, standards, statutory requirements, compliance frameworks, professional principles, and formal business rules are domain_knowledge.\n8. Performing or managing a process is relevant_skill; only understanding its rules, standards, or principles is domain_knowledge.\n9. relevant_experience evaluates strength, relevance, depth, responsibility scope, industry context, and working environment beyond eligibility.\n10. Never use the word minimum in a soft criterion name.\n11. job_related_language requires an exact language name in sourceText, such as English, Bahasa Malaysia, Mandarin, or Japanese.\n12. Mandatory certifications or licences are hard criteria. preferred_certification requires preferred, desirable, advantage, or added advantage wording.\n13. Every sourceText must be a short grounded quote or close excerpt from one supplied section item. Keep the distinctive job-specific terms; do not invent unsupported evidence.\n14. Return only criterion type, name, and sourceText. Do not assign weights, descriptions, evidence rules, or ignored texts.\n15. Return JSON only. HR will review the Python-validated result.\n",
+    "SECTION_OUTPUT_SHAPE": {
+      "criteria": [
+        {
+          "type": "allowed_type_id",
+          "name": "Concise HR-facing criterion name",
+          "sourceText": "Grounded evidence from the JD."
+        }
+      ]
+    },
+    "SECTION_GUIDANCE": {
+      "responsibilities": "Merge duties only when they evaluate the same overall capability. Do not copy criterion names from examples or instructions. Create every criterion name only from the supplied JD section. The criterion name must accurately describe its own sourceText. Do not introduce another job function, technology, industry, or process that is not explicitly supported by the sourceText. Focus on concrete work activities, tools, systems, and processes. Do not infer education, certification, language, or experience years from duties alone.",
+      "requirements": "Group related requirements into concise job-level criteria without dropping a distinct, explicitly stated requirement merely to reduce the count. Focus on explicitly stated skills, experience relevance, education-field relevance, professional knowledge, preferred certifications, and named languages. Mandatory certifications are hard criteria and must not become preferred_certification. Convert minimum education or experience only into a soft measure of relevance or depth beyond the threshold."
+    },
+    "GENERIC_DUTY_PATTERNS": "[re.compile('(?:(?:perform|complete|carry out|handle|undertake)\\\\s+)?(?:any\\\\s+)?(?:other\\\\s+)?(?:ad[ -]?hoc\\\\s+)?(?:duties|tasks|assignments|responsibilit(?:y|ies))(?:\\\\s+(?:as|when|which may be|to be))?\\\\s+(?:a, re.IGNORECASE), re.compile('(?:follow|adhere to|comply with|maintain consistent application of)\\\\s+(?:all\\\\s+)?(?:company\\\\s+)?(?:policies|procedures|rules|guidelines)(?:\\\\s*(?:,|and)\\\\s*(?:policies|procedures|rules|guidelines), re.IGNORECASE), re.compile('report\\\\s+to\\\\s+(?:the\\\\s+)?(?:manager|management|supervisor|superior)', re.IGNORECASE)]",
+    "GENERIC_DUTY_REASON": "Generic duty that is not useful for candidate scoring.",
+    "DEFAULT_TYPE_WEIGHTS": {
+      "relevant_skill": 30,
+      "relevant_experience": 25,
+      "domain_knowledge": 20,
+      "education_relevance": 10,
+      "preferred_certification": 8,
+      "job_related_language": 7
+    },
+    "PREFERRED_MAX_SECTION_CRITERIA": 4,
+    "DUPLICATE_SIMILARITY_THRESHOLD": 0.75,
+    "STRICT_NAME_SIMILARITY_THRESHOLD": 0.82,
+    "EXPLICIT_LANGUAGE_PATTERN": "re.compile('\\\\b(?:English|Bahasa Malaysia|Bahasa Melayu|Malay|Mandarin|Chinese|Japanese|Tamil|Korean)\\\\b', re.IGNORECASE)",
+    "EDUCATION_SOURCE_PATTERN": "re.compile('\\\\b(?:education|academic|diploma|degree|bachelor|master|phd|field of study|related field|discipline|academic qualification)\\\\b', re.IGNORECASE)",
+    "EDUCATION_CREDENTIAL_PATTERN": "re.compile(\"\\\\b(?:diploma|degree|bachelor(?:'s)?|master(?:'s)?|phd|academic qualification|professional qualification)\\\\b\", re.IGNORECASE)",
+    "EDUCATION_FIELD_LINK_PATTERN": "re.compile(\"\\\\b(?:diploma|degree|bachelor(?:'s)?|master(?:'s)?|phd|academic qualification|professional qualification)\\\\b.{0,60}?\\\\b(?:in|of)\\\\s+(?P<field>[A-Za-z][A-Za-z0-9&/(),.\\\\- ]{2,100})\", re.IGNORECASE)",
+    "GENERIC_EDUCATION_FIELD_PATTERN": "re.compile('^(?:an?\\\\s+)?(?:any|related|relevant|appropriate|recognised)?\\\\s*(?:field|discipline|subject|qualification|degree)?(?:\\\\s+or\\\\s+(?:an?\\\\s+)?related\\\\s+(?:field|discipline))?\\\\s*(?:is\\\\s+required|requ, re.IGNORECASE)",
+    "EXPERIENCE_EVIDENCE_PATTERN": "re.compile('\\\\b(?:at least\\\\s+\\\\d+(?:\\\\s*[-–]\\\\s*\\\\d+)?\\\\s+years?|\\\\d+\\\\+?\\\\s+years?|years?\\\\s+of|past\\\\s+working\\\\s+experience|work(?:ing)?\\\\s+experience|experience\\\\s+(?:in|as|with)|experienced\\\\s+(?:in|with)|, re.IGNORECASE)",
+    "FORMAL_DOMAIN_SUBJECT_PATTERN": "re.compile('\\\\b(?:laws?|legislation|regulations?|codes?|standards?|statutory requirements?|compliance frameworks?|compliance requirements?|professional principles?|formal procedures?|formal business rules?|safet, re.IGNORECASE)",
+    "FORMAL_DOMAIN_KNOWLEDGE_PATTERN": "re.compile('\\\\b(?:knowledge\\\\s+of|understanding\\\\s+of|familiar(?:ity)?\\\\s+with)\\\\b.{0,120}?(?:laws?|legislation|regulations?|codes?|standards?|statutory requirements?|compliance frameworks?|compliance requiremen, re.IGNORECASE)",
+    "TOOL_OR_SOFTWARE_PATTERN": "re.compile('\\\\b(?:software|system|platform|application|tool|ERP|HRIS|WMS|CAD|AutoCAD|SolidWorks|Excel|spreadsheet|database)\\\\b', re.IGNORECASE)",
+    "PEOPLE_MANAGEMENT_PATTERN": "re.compile('\\\\b(?:staff|team|people|personnel|employee|workforce)\\\\b.{0,60}\\\\b(?:manage|management|supervise|supervision|lead|leadership|allocate|coach|mentor)\\\\w*\\\\b|\\\\b(?:manage|management|supervise|supervisio, re.IGNORECASE)",
+    "ANALYSIS_PROBLEM_SOLVING_PATTERN": "re.compile('\\\\b(?:analy(?:se|sis|ze)|problem solving|root cause|investigat(?:e|ion)|troubleshoot(?:ing)?|optim(?:ise|ize|isation|ization)|improv(?:e|ement))\\\\b', re.IGNORECASE)",
+    "REPORTING_DOCUMENTATION_PATTERN": "re.compile('\\\\b(?:report(?:ing)?|document(?:ation)?|record(?:s| keeping)?|write|writing|register)\\\\b', re.IGNORECASE)",
+    "SOURCE_GROUNDING_THRESHOLD": 0.68,
+    "SOURCE_GROUNDING_STOPWORDS": "{'for', 'or', 'by', 'from', 'at', 'be', 'the', 'as', 'in', 'a', 'to', 'with', 'an', 'of', 'on', 'and'}",
+    "PREFERRED_CERTIFICATION_PATTERN": "re.compile('\\\\b(?:preferred|desirable|advantage|added advantage)\\\\b', re.IGNORECASE)",
+    "MANDATORY_CERTIFICATION_PATTERN": "re.compile('\\\\b(?:mandatory|required|must|essential|compulsory)\\\\b', re.IGNORECASE)",
+    "DOMAIN_KNOWLEDGE_FALLBACK_INTRO_PATTERN": "re.compile('\\\\b(?:knowledge\\\\s+of|understanding\\\\s+of|familiarity\\\\s+with)\\\\s+(?P<subject>.+?)(?:\\\\s+is\\\\s+(?:required|essential|preferred))?[.;]?$', re.IGNORECASE)",
+    "DOMAIN_KNOWLEDGE_FALLBACK_SUBJECT_PATTERN": "re.compile('\\\\b(?:laws?|legislation|regulations?|codes?|standards?|principles?|formal\\\\s+procedures?|safety\\\\s+practices?|compliance\\\\s+requirements?|financial\\\\s+controls?|statutory\\\\s+requirements?)\\\\b', re.IGNORECASE)",
+    "PREFERRED_CERTIFICATION_FALLBACK_CONTEXT_PATTERN": "re.compile('\\\\b(?P<credential>(?:[A-Za-z0-9&/()\\\\-]+\\\\s+){0,8}(?:certification|certificate|licen[cs]e|registration))\\\\b', re.IGNORECASE)",
+    "EXPERIENCE_FALLBACK_CONTEXT_PATTERN": "re.compile('\\\\bexperience\\\\s+(?:in|within|across|including|covering)\\\\s+[A-Za-z0-9&/(),\\\\- ]{3,100}|\\\\b(?:industrial|manufacturing|regulated|high-volume|multi-site|supervisory|leadership)\\\\b[A-Za-z0-9&/(),\\\\- ]{, re.IGNORECASE)",
+    "EXPERIENCE_LEADING_THRESHOLD_PATTERN": "re.compile('^\\\\s*(?:at\\\\s+least\\\\s+)?(?:\\\\d+(?:\\\\s*[-–]\\\\s*\\\\d+)?\\\\+?|one|two|three|four|five|six|seven|eight|nine|ten)\\\\s+years?(?:\\\\s+of)?\\\\s+', re.IGNORECASE)",
+    "DEFAULT_DESCRIPTION_TEMPLATES": {
+      "relevant_skill": "Evaluates demonstrated ability in {name}.",
+      "relevant_experience": "Evaluates the depth, relevance, and results of the candidate's {name}.",
+      "education_relevance": "Evaluates how directly the candidate's education supports {name}.",
+      "domain_knowledge": "Evaluates practical understanding and application of {name}.",
+      "preferred_certification": "Evaluates the relevance and current validity of {name}.",
+      "job_related_language": "Evaluates job-related written or spoken ability in {name}."
+    },
+    "DEFAULT_EVIDENCE_RULES": {
+      "relevant_skill": "The resume should show this skill in work experience, projects, achievements, or a skills section.",
+      "relevant_experience": "The resume should show relevant roles, responsibility scope, duration, working environment, and measurable outcomes beyond the minimum.",
+      "education_relevance": "The resume should show a directly relevant field of study, coursework, academic projects, or equivalent job-related learning.",
+      "domain_knowledge": "The resume should show practical use of the named process, regulation, standard, or professional knowledge.",
+      "preferred_certification": "The resume should show the certification title, issuer, validity, and relevance to the work.",
+      "job_related_language": "The resume should show explicit language proficiency used in a relevant work or professional context."
+    },
+    "CAPABILITY_STOPWORDS": "{'capability', 'perform', 'activity', 'knowledge', 'process', 'activities', 'the', 'monitor', 'operation', 'execution', 'administration', 'review', 'relevant', 'coordinate', 'support', 'skill', 'ensure', 'of', 'skills', 'proficiency', 'candidate', 'handling', 'conduct', 'experience', 'processing', 'manage', 'operations', 'ability', 'job', 'responsible', 'professional', 'provide', 'demonstrated', 'management', 'carry', 'and', 'using', 'coordination'}",
+    "WORKFLOW_ACTIVITY_PATTERNS": "{'quantitative_analysis': re.compile('\\\\b(?:variance|benchmark(?:ing)?|dashboard|quantitative|statistical|profitability|yield|capacity|forecast|model(?:ing|ling)?|calculate|calculation)\\\\b|\\\\bdata\\\\s+analysis\\\\b|\\\\banaly(?:se|ze|sis)(?:\\, re.IGNORECASE), 'administration': re.compile('\\\\b(?:maintain|record|reconcile|invoice|enrol(?:ment)?|register|update|document(?:ation)?)\\\\b', re.IGNORECASE), 'lifecycle_review': re.compile('\\\\b(?:review|verify|verification|validate|validation|prototype|change|revision|resolve|test|trial|qualification|commission)\\\\b', re.IGNORECASE), 'improvement': re.compile('\\\\b(?:root cause|corrective|preventive|improv(?:e|ement)|optim(?:ise|ize|isation|ization)|problem solving|defect|nonconform(?:ity|ities)?|instability)\\\\b', re.IGNORECASE), 'inspection': re.compile('\\\\b(?:inspect(?:ion)?|measure(?:ment)?|gauge|instrument|drawing|tolerance|sampling|first[ -]?piece|sample)\\\\b', re.IGNORECASE), 'audit': re.compile('\\\\b(?:audit|compliance|controlled procedure|audit requirement|process owner training)\\\\b', re.IGNORECASE)}",
+    "WORKFLOW_OBJECTIVE_PATTERNS": "{'candidate_acquisition': re.compile('\\\\b(?:recruit(?:ment|ing)|job\\\\s+post(?:ing)?|candidate(?:s)?|pre[ -]?screen(?:ing)?|screen(?:ing)?|shortlist(?:ing)?|interview(?:ing)?)\\\\b', re.IGNORECASE)}",
+    "WORKFLOW_STEP_ACTION_PATTERN": "re.compile('\\\\b(?:assist|handle|manage|post|source|pre[ -]?screen|screen|shortlist|arrange|schedule|coordinate|conduct)\\\\w*\\\\b', re.IGNORECASE)",
+    "WORKFLOW_SUPPORTING_CAPABILITY_PATTERN": "re.compile('\\\\b(?:proficien(?:t|cy)|familiar(?:ity)?|tool|platform|software|system)\\\\b', re.IGNORECASE)",
+    "CONSOLIDATION_SYSTEM_PROMPT": "You consolidate already validated job-scoring criteria into a complete job-level set.\n\nThe six criterion types are fixed and cannot be changed.\n\nReturn a complete partition of all supplied criteria. Every input criterion ID must appear exactly once.\nInclude a one-member group for every criterion that should not be merged.\n\nFirst process criteria within one criteriaByType key at a time.\nA group may contain memberIds from exactly one criteriaByType key, and its type must exactly match that key.\nNever combine memberIds from different criteriaByType keys, even when the total result remains above six groups.\n\nMerge criteria only when they have the same type and evaluate the same overall candidate capability.\nJudge this from the complete set of names and sourceText, not from one keyword.\nMerge adjacent workflow steps only when they remain one independently scorable capability.\nKeep capabilities separate when the resume would need materially different evidence to score them.\nDo not merge people management with tool or system proficiency.\nDo not merge analysis or problem solving with report writing or documentation unless the supplied evidence explicitly describes one combined capability.\nDo not merge distinct tools, systems, professional functions or knowledge areas.\n\nDo not merge criteria across different types.\nDo not remove supported criteria or source evidence.\nDo not create a new job function, tool, technology, industry, process or requirement.\n\nCreate each consolidated name only from the supplied criterion names and sourceText.\nKeep names concise, professional, and broad enough to describe every member of the group.\n\nA group may contain several responsibility steps only when they test the same independently scorable capability.\nThe six configured items are criterion types, not a maximum number of final criteria.\nNever merge criteria to reach a target count. Preserve every distinct capability as a one-member group.\n\nBefore returning, verify that the memberIds across all groups exactly equal the supplied input IDs.\n\nReturn JSON only.\n",
+    "CONSOLIDATION_OUTPUT_SHAPE": {
+      "groups": [
+        {
+          "type": "allowed_type_id",
+          "name": "Consolidated HR-facing criterion name",
+          "memberIds": [
+            "c1",
+            "c2"
+          ]
+        }
+      ]
+    }
+  },
+  "functionsNotExported": [],
+  "pythonVersion": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+  "platform": "Linux-6.12.90+-x86_64-with-glibc2.35",
+  "packageVersions": {
+    "torch": "2.10.0+cu128",
+    "transformers": "4.57.6",
+    "pandas": "2.3.3"
+  },
+  "model": {
+    "name": "Qwen/Qwen2.5-3B-Instruct",
+    "maxNewTokens": 900,
+    "use4Bit": true,
+    "device": "Tesla T4"
+  },
+  "runtimeSelfParity": [
+    {
+      "caseId": "final_compensation_benefits_analyst",
+      "finalOutputExact": true,
+      "diagnosticsExact": true,
+      "rawOutputsConsumed": 2
+    },
+    {
+      "caseId": "final_employee_relations_officer",
+      "finalOutputExact": true,
+      "diagnosticsExact": true,
+      "rawOutputsConsumed": 2
+    },
+    {
+      "caseId": "final_it_support_engineer",
+      "finalOutputExact": true,
+      "diagnosticsExact": true,
+      "rawOutputsConsumed": 2
+    },
+    {
+      "caseId": "final_process_engineer",
+      "finalOutputExact": true,
+      "diagnosticsExact": true,
+      "rawOutputsConsumed": 2
+    },
+    {
+      "caseId": "final_warehouse_supervisor",
+      "finalOutputExact": true,
+      "diagnosticsExact": true,
+      "rawOutputsConsumed": 2
+    }
+  ],
+  "runtimeSelfParityExactCount": 5,
+  "runtimeSelfParityTotal": 5
+}

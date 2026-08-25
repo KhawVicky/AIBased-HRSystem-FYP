@@ -1,0 +1,17 @@
+.git
+.agents
+.codex
+.tmp
+.tmp-original
+node_modules
+dist
+experiments
+imports
+jd_criteria_service
+parsing-service
+project-docs
+database
+server/.env.local
+server/uploads
+*.log
+*.err

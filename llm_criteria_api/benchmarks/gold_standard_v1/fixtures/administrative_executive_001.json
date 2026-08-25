@@ -1,0 +1,41 @@
+{
+  "benchmarkId": "administrative-executive-001",
+  "jobFamily": "administration",
+  "referenceJd": {
+    "jobTitle": "Administrative Executive",
+    "department": "Administration",
+    "description": "",
+    "qualifications": [
+      {"id": "Q1", "text": "Diploma in Business Administration or a related field."}
+    ],
+    "responsibilities": [
+      {"id": "R1", "text": "Prepare quotations, invoices, purchase orders and delivery orders."},
+      {"id": "R2", "text": "Maintain accurate electronic and physical records and ensure documents can be retrieved when required."},
+      {"id": "R3", "text": "Coordinate meetings, appointments, travel arrangements and management calendars."},
+      {"id": "R4", "text": "Prepare administrative reports, update spreadsheets and maintain internal databases."},
+      {"id": "R5", "text": "Coordinate office suppliers, service vendors, maintenance requests and facility-related matters."},
+      {"id": "R6", "text": "Monitor office supplies and arrange purchases when stock reaches the required level."},
+      {"id": "R7", "text": "Handle customer and internal department enquiries relating to administrative documents."},
+      {"id": "R8", "text": "Support the daily operation of the office and assist other departments when required."},
+      {"id": "R9", "text": "Perform ad hoc duties assigned by management."}
+    ],
+    "requirements": [
+      {"id": "Q2", "text": "Minimum 1 year of administrative experience."},
+      {"id": "Q3", "text": "Proficiency in Microsoft Word, Excel and PowerPoint."},
+      {"id": "Q4", "text": "Must be organised, proactive and able to communicate effectively."}
+    ]
+  },
+  "expectedCriteria": [
+    {"benchmarkCriterionId": "A", "acceptedNames": ["Administrative Document Preparation", "Business Document Preparation", "Quotation and Order Documentation", "Administrative Transaction Documents"], "type": "relevant_skill", "requiredEvidenceTopics": ["quotations", "invoices", "purchase orders", "delivery orders"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R1"], "optionalSourceIds": ["R7"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 24, "acceptableWeightRange": [20, 28]},
+    {"benchmarkCriterionId": "B", "acceptedNames": ["Records and Document Control", "Administrative Records Management", "Document Control", "Records Management"], "type": "relevant_skill", "requiredEvidenceTopics": ["electronic records", "physical records", "document retrieval"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R2"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 20, "acceptableWeightRange": [16, 24]},
+    {"benchmarkCriterionId": "C", "acceptedNames": ["Office Coordination and Scheduling", "Calendar and Meeting Coordination", "Administrative Scheduling", "Meeting and Travel Coordination"], "type": "relevant_skill", "requiredEvidenceTopics": ["meetings", "appointments", "travel arrangements", "management calendars"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R3"], "expectedImportance": "high", "expectedPriority": "core", "targetWeight": 17, "acceptableWeightRange": [13, 21]},
+    {"benchmarkCriterionId": "D", "acceptedNames": ["Vendor and Facility Coordination", "Office Vendor Coordination", "Facility and Supplier Coordination", "Office Facilities Administration"], "type": "relevant_skill", "requiredEvidenceTopics": ["suppliers or vendors", "maintenance or facility matters", "office supplies or purchases"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R5", "R6"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 14, "acceptableWeightRange": [10, 18]},
+    {"benchmarkCriterionId": "E", "acceptedNames": ["Microsoft Office and Reporting", "Microsoft Office Applications", "Administrative Reporting", "Office Applications and Reporting"], "type": "relevant_skill", "requiredEvidenceTopics": ["Word or Excel or PowerPoint", "administrative reports or spreadsheets"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["R4", "Q3"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 12, "acceptableWeightRange": [8, 16]},
+    {"benchmarkCriterionId": "F", "acceptedNames": ["Administrative Experience", "Administration Experience", "Office Administration Experience"], "type": "relevant_experience", "requiredEvidenceTopics": ["1 year", "administrative experience"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["Q2"], "expectedImportance": "low", "expectedPriority": "minimum_supporting", "targetWeight": 8, "acceptableWeightRange": [4, 11]},
+    {"benchmarkCriterionId": "G", "acceptedNames": ["Business Administration Education", "Business Education", "Relevant Administration Education", "Business Administration Field"], "type": "education_relevance", "requiredEvidenceTopics": ["Business Administration"], "forbiddenEvidenceTopics": [], "expectedSourceIds": ["Q1"], "expectedImportance": "medium", "expectedPriority": "supporting", "targetWeight": 5, "acceptableWeightRange": [2, 9]}
+  ],
+  "mustMerge": [["quotation", "invoice", "purchase-order", "delivery-order"], ["vendor coordination", "maintenance matters", "office-supply purchasing"]],
+  "mustNotMerge": [["Document Preparation", "Document Control"], ["Scheduling", "Vendor Management"], ["Microsoft Office", "Administrative Experience"]],
+  "mustNotGenerate": ["Organisation Skills", "Proactive Attitude", "Communication Skills", "Office Support", "Assisting Other Departments", "Ad Hoc Duties", "Customer Service"],
+  "expectedEligibility": {"educationLevel": "Diploma", "minExperience": "1 year"}
+}

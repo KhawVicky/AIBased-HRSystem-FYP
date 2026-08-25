@@ -1,0 +1,164 @@
+{
+  "benchmarkId": "holdout-recruitment-executive-001",
+  "jobFamily": "talent_acquisition",
+  "referenceJd": {
+    "jobTitle": "Recruitment Executive",
+    "department": "Human Resources",
+    "description": "Manage practical recruitment activities from vacancy intake through offer preparation while maintaining an accurate and respectful candidate process.",
+    "qualifications": [
+      {"id": "Q1", "text": "Diploma or Bachelor's Degree in Human Resources, Business Administration, Psychology or a related field."}
+    ],
+    "responsibilities": [
+      {"id": "R1", "text": "Partner with hiring managers to clarify vacancy requirements, prepare job descriptions and agree recruitment plans."},
+      {"id": "R2", "text": "Source candidates through job portals, professional networks, employee referrals and targeted outreach."},
+      {"id": "R3", "text": "Screen applications and conduct structured phone interviews against the approved job requirements."},
+      {"id": "R4", "text": "Schedule interviews, coordinate interview panels and keep candidates informed throughout the selection process."},
+      {"id": "R5", "text": "Prepare offer documents and coordinate reference checks and other pre-employment checks."},
+      {"id": "R6", "text": "Maintain accurate applicant tracking system records and produce recruitment pipeline and time-to-fill reports."},
+      {"id": "R7", "text": "Support employer-branding campaigns, university engagement and career-fair activities."},
+      {"id": "R8", "text": "Provide complete candidate and joining information to the onboarding team after offer acceptance."},
+      {"id": "R9", "text": "Perform other duties assigned by the HR Manager from time to time."}
+    ],
+    "requirements": [
+      {"id": "Q2", "text": "Minimum 2 years of recruitment or talent acquisition experience."},
+      {"id": "Q3", "text": "Experience using an applicant tracking system and online job portals is preferred."},
+      {"id": "Q4", "text": "Strong interpersonal and written communication skills."},
+      {"id": "Q5", "text": "Working knowledge of Malaysian employment legislation and fair hiring practices."}
+    ]
+  },
+  "expectedCriteria": [
+    {
+      "benchmarkCriterionId": "A",
+      "acceptedNames": ["Vacancy Requirements and Recruitment Planning", "Recruitment Planning and Job Description Development", "Hiring Requirements Planning", "Job Description and Recruitment Planning"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["hiring managers", "job descriptions", "recruitment plans"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R1"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 15,
+      "acceptableWeightRange": [9, 21]
+    },
+    {
+      "benchmarkCriterionId": "B",
+      "acceptedNames": ["Candidate Sourcing", "Multi-Channel Candidate Sourcing", "Talent Sourcing", "Candidate Outreach and Sourcing"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["job portals", "professional networks", "candidate outreach"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R2"],
+      "optionalSourceIds": ["Q3"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 15,
+      "acceptableWeightRange": [9, 21]
+    },
+    {
+      "benchmarkCriterionId": "C",
+      "acceptedNames": ["Candidate Screening and Phone Interviewing", "Application Screening and Phone Interviews", "Candidate Assessment and Screening", "Recruitment Screening"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["screen applications", "phone interviews", "job requirements"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R3"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 14,
+      "acceptableWeightRange": [8, 20]
+    },
+    {
+      "benchmarkCriterionId": "D",
+      "acceptedNames": ["Interview Coordination and Candidate Communication", "Interview Scheduling and Candidate Management", "Selection Process Coordination", "Candidate Interview Coordination"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["schedule interviews", "interview panels", "candidates informed"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R4"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 12,
+      "acceptableWeightRange": [7, 18]
+    },
+    {
+      "benchmarkCriterionId": "E",
+      "acceptedNames": ["Offer and Pre-Employment Check Coordination", "Offer Preparation and Reference Checks", "Employment Offer Administration", "Offer Documentation and Pre-Employment Checks"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["offer documents", "reference checks", "pre-employment checks"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R5"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 12,
+      "acceptableWeightRange": [7, 18]
+    },
+    {
+      "benchmarkCriterionId": "F",
+      "acceptedNames": ["Applicant Tracking and Recruitment Reporting", "ATS and Recruitment Pipeline Reporting", "Recruitment Data and Pipeline Management", "Applicant Tracking System Management"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["applicant tracking system", "recruitment pipeline", "time-to-fill reports"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R6"],
+      "optionalSourceIds": ["Q3"],
+      "expectedImportance": "high",
+      "expectedPriority": "core",
+      "targetWeight": 12,
+      "acceptableWeightRange": [7, 18]
+    },
+    {
+      "benchmarkCriterionId": "G",
+      "acceptedNames": ["Recruitment Experience", "Talent Acquisition Experience", "Recruitment or Talent Acquisition Experience"],
+      "type": "relevant_experience",
+      "requiredEvidenceTopics": ["2 years", "recruitment or talent acquisition experience"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["Q2"],
+      "expectedImportance": "low",
+      "expectedPriority": "minimum_supporting",
+      "targetWeight": 8,
+      "acceptableWeightRange": [3, 13]
+    },
+    {
+      "benchmarkCriterionId": "H",
+      "acceptedNames": ["Employer Branding and Career Fairs", "Employer Branding Activities", "University and Career-Fair Engagement", "Talent Attraction Campaigns"],
+      "type": "relevant_skill",
+      "requiredEvidenceTopics": ["employer-branding", "university engagement", "career-fair activities"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["R7"],
+      "expectedImportance": "medium",
+      "expectedPriority": "supporting",
+      "targetWeight": 5,
+      "acceptableWeightRange": [2, 10]
+    },
+    {
+      "benchmarkCriterionId": "I",
+      "acceptedNames": ["Human Resources or Business Education", "HR, Business or Psychology Education", "Relevant Recruitment Education", "Human Resources Education"],
+      "type": "education_relevance",
+      "requiredEvidenceTopics": ["Human Resources", "Business Administration or Psychology"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["Q1"],
+      "expectedImportance": "medium",
+      "expectedPriority": "supporting",
+      "targetWeight": 4,
+      "acceptableWeightRange": [1, 9]
+    },
+    {
+      "benchmarkCriterionId": "J",
+      "acceptedNames": ["Malaysian Employment Law", "Employment Legislation and Fair Hiring", "Malaysian Hiring Compliance", "Fair Hiring Practices"],
+      "type": "domain_knowledge",
+      "requiredEvidenceTopics": ["Malaysian employment legislation", "fair hiring practices"],
+      "forbiddenEvidenceTopics": [],
+      "expectedSourceIds": ["Q5"],
+      "expectedImportance": "medium",
+      "expectedPriority": "supporting",
+      "targetWeight": 3,
+      "acceptableWeightRange": [1, 8]
+    }
+  ],
+  "mustMerge": [
+    ["interview scheduling", "interview-panel coordination", "candidate updates"],
+    ["offer documents", "reference checks", "pre-employment checks"]
+  ],
+  "mustNotMerge": [
+    ["candidate sourcing", "candidate screening"],
+    ["recruitment reporting", "employment legislation"],
+    ["recruitment education", "recruitment experience"]
+  ],
+  "mustNotGenerate": ["Communication Skills", "Interpersonal Skills", "Teamwork", "Other Duties", "HR Skills", "Relevant Experience", "Recruitment"],
+  "expectedEligibility": {"educationLevel": "Diploma", "minExperience": "2 years"}
+}
